@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PushToSky</title>
+  <style>
+    :root {
+      --bg: #0b1020;
+      --fg: #e6eefc;
+      --muted: #8fa1c7;
+      --accent: #4ade80;
+      --warn: #fbbf24;
+      --err: #ef4444;
+    }
+
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, "Apple Color Emoji", "Segoe UI Emoji"
+    }
+
+    .wrap {
+      display: flex;
+      flex-direction: column;
+      min-height: 100%
+    }
+
+    header {
+      padding: 12px 16px;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #18213f
+    }
+
+    header h1 {
+      font-size: 18px;
+      margin: 0;
+      font-weight: 700
+    }
+
+    header small {
+      color: var(--muted)
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 12px;
+      gap: 12px
+    }
+
+    .card {
+      border: 1px solid #18213f;
+      border-radius: 14px;
+      padding: 12px;
+      background: rgba(255, 255, 255, 0.02)
+    }
+
+    .controls {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      align-items: center
+    }
+
+    .controls label {
+      font-size: 12px;
+      color: var(--muted)
+    }
+
+    .controls select,
+    .controls input,
+    .controls button {
+      width: 100%;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid #263258;
+      background: #0f1530;
+      color: var(--fg);
+      box-sizing: border-box
+    }
+
+    .controls button {
+      cursor: pointer
+    }
+
+    .status {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px
+    }
+
+    .status div {
+      background: #0f1530;
+      border: 1px solid #263258;
+      border-radius: 10px;
+      padding: 10px
+    }
+
+    .status .val {
+      font-size: 18px;
+      font-variant-numeric: tabular-nums
+    }
+
+    .stage {
+      position: relative;
+      flex: 1;
+      min-height: 40vh;
+      display: flex;
+      align-items: center;
+      justify-content: center
+    }
+
+    .reticle {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      pointer-events: none
+    }
+
+    .reticle::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      border: 2px solid #7aa2ff;
+      border-radius: 50%
+    }
+
+    .reticle::after {
+      content: "";
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      border: 1px dashed #2a3a6b;
+      border-radius: 50%
+    }
+
+    canvas {
+      width: 100%;
+      height: 100%;
+      max-height: 55vh;
+      background: radial-gradient(1200px 700px at 50% 60%, rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0));
+      border: 1px solid #18213f;
+      border-radius: 14px
+    }
+
+    .arrows {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      grid-template-columns: auto 1fr auto;
+      pointer-events: none
+    }
+
+    .arrow {
+      display: grid;
+      place-items: center;
+      opacity: .1;
+      transition: opacity .15s ease;
+      font-size: 56px
+    }
+
+    .arrow.show {
+      opacity: 1
+    }
+
+    .arrow.up {
+      grid-row: 1;
+      grid-column: 2
+    }
+
+    .arrow.down {
+      grid-row: 3;
+      grid-column: 2
+    }
+
+    .arrow.left {
+      grid-row: 2;
+      grid-column: 1
+    }
+
+    .arrow.right {
+      grid-row: 2;
+      grid-column: 3
+    }
+
+    .dot {
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      background: var(--accent);
+      border-radius: 999px;
+      box-shadow: 0 0 0 3px rgba(74, 222, 128, .25)
+    }
+
+    footer {
+      padding: 10px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 12px
+    }
+
+    .chip {
+      display: inline-flex;
+      gap: 6px;
+      align-items: center;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid #263258;
+      background: #0f1530
+    }
+
+    .ok {
+      color: var(--accent)
+    }
+
+    .warn {
+      color: var(--warn)
+    }
+
+    .err {
+      color: var(--err)
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <img src="pushtosky.png" width="25" alt="PushToSky Logo – Smart Telescope Control" class="logo" />
+      <h1>PushToSky</h1>
+      <small id="clock">—</small>
+    </header>
+
+
+
+<main>
+<div class="card controls">
+<div style="grid-column:1/-1; display:flex; flex-direction:column; gap:8px;">
+<button id="btnPerm">📲 Enable Motion/Compass</button>
+<button id="btnGeo">📍 Enable Location</button>
+<button id="btnCalibrate">🎯 Alignment</button>
+<button id="btnReset">🔄 Reset Alignment</button>
+<button onclick="startAzCalibration()">▶️ Start (Az) Calibration</button>
+<button onclick="stopAzCalibration()">⏹ Stop (Az) Calibration</button>
+<button onclick="resetAzCalibration()">🔄 Reset (Az) Calibration</button>
+<hr>
+<!--<button id="en" onclick="window.location.href='holdfazis-hu.html'">Moon Phase Tracker</button>
+<button id="en" onclick="window.location.href='naprendszer_hu.html'">Solar System – Quick Guides</button>-->
+
+
+<p style="margin: 0; padding-top: 10px; color: var(--muted); font-size: 12px;">Search Target Object
+</p>
+<input id="targetInput" type="text" list="targetsList" placeholder="Search...">
+<datalist id="targetsList"></datalist>
+
+
+<label>Accuracy Threshold (°)
+<input id="threshold" type="number" value="2" step="0.5" min="0.2" />
+</label>
+<label>Manual Latitude (°)
+<input id="latInput" type="number" step="0.0001" placeholder="e.g. 47.4979" />
+</label>
+<label>Manual Longitude (°)
+<input id="lonInput" type="number" step="0.0001" placeholder="e.g. 19.0402" />
+</label>
+</div>
+</div>
+
+
+<div class="card status">
+<div>
+<div style="font-size:12px; color:var(--muted)">Sensor Status</div>
+<div id="sensorState" class="val warn chip">Waiting for permission…</div>
+</div>
+<div>
+<div style="font-size:12px; color:var(--muted)">GPS / Manual Position</div>
+<div id="geoState" class="val chip">—</div>
+</div>
+<div>
+<div style="font-size:12px; color:var(--muted)">Measured Azimuth (az)</div>
+<div class="val"><span id="azVal">0.0</span>°</div>
+</div>
+<div>
+<div style="font-size:12px; color:var(--muted)">Measured Altitude (alt)</div>
+<div class="val"><span id="altVal">0.0</span>°</div>
+</div>
+<div>
+<div style="font-size:12px; color:var(--muted)">Target Azimuth / Altitude</div>
+<div class="val"><span id="goalAz">—</span>° / <span id="goalAlt">—</span>°</div>
+</div>
+<div>
+<div style="font-size:12px; color:var(--muted)">Offset (Δaz / Δalt)</div>
+<div class="val"><span id="dAz">—</span>° / <span id="dAlt">—</span>°</div>
+</div>
+</div>
+
+
+<div class="stage card">
+<canvas id="sky"></canvas>
+<div class="reticle"></div>
+<div class="arrows">
+<div class="arrow up" id="arrowUp">⬆️</div>
+<div class="arrow down" id="arrowDown">⬇️</div>
+<div class="arrow left" id="arrowLeft">⬅️</div>
+<div class="arrow right" id="arrowRight">➡️</div>
+</div>
+<div id="greenDot" class="dot" style="display:none"></div>
+</div>
+</main>
+
+    <footer>
+      <span class="chip"></span>
+    </footer>
+  </div>
+
+  <script src="astronomy.browser.js"></script>
+  <script>
+    // === Segédfüggvények: szög normalizálás, parszolás ===
+    const toRad = d => d * Math.PI / 180;
+    const toDeg = r => r * 180 / Math.PI;
+    const norm360 = d => (d % 360 + 360) % 360;
+    const shortestDegDelta = (a, b) => { // b - a, -180..+180
+      let d = norm360(b) - norm360(a);
+      if (d > 180) d -= 360;
+      if (d < -180) d += 360;
+      return d;
+    };
+
+    function parseRA(raStr) {
+      // "2h32m31.8s" => fok
+      const m = raStr.trim().match(/(\d+(?:\.\d+)?)h\s*(\d+(?:\.\d+)?)m\s*(\d+(?:\.\d+)?)s/i);
+      if (!m) return 0;
+      const h = parseFloat(m[1]);
+      const min = parseFloat(m[2]);
+      const s = parseFloat(m[3]);
+      const hours = h + min / 60 + s / 3600;
+      return hours * 15; // 24h -> 360°
+    }
+
+    function parseDec(decStr) {
+      // "+89°15'34.4" => fok (előjeles)
+      const m = decStr.trim().match(/([+\-])?(\d+)[°\s]+(\d+)[\'′m]?(?:\s*(\d+(?:\.\d+)?)[\"″s]?)?/i);
+      if (!m) return 0;
+      const sign = m[1] === '-' ? -1 : 1;
+      const d = parseFloat(m[2]);
+      const min = parseFloat(m[3] || 0);
+      const s = parseFloat(m[4] || 0);
+      return sign * (d + min / 60 + s / 3600);
+    }
+
+
+function startAzCalibration() {
+  state.azCalibStart = state.az;
+  state.isCalibrating = true;
+alert("Azimuth calibration started! Rotate the telescope around.");
+}
+
+function stopAzCalibration() {
+  if (!state.isCalibrating) {
+alert("Start calibration first!");
+    return;
+  }
+  const endAz = state.az;
+
+  // JAVÍTVA: A felesleges +360-at kivettem.
+  let rotation = shortestDegDelta(state.azCalibStart, endAz);
+  if (rotation < 0) rotation += 360; // Normalize to 0-360
+
+  // Skálázási tényező
+  // JAVÍTVA: A 360 fokos elfordulás helyett a mért elfordulást használjuk.
+  state.azCalibScale = 360 / rotation;
+  state.isCalibrating = false;
+
+  alert(`Azimuth calibration complete! Original rotation: ${rotation.toFixed(1)}°, Scale: ${state.azCalibScale.toFixed(5)}`);
+}
+
+function resetAzCalibration() {
+    state.azCalibStart = null;
+    state.azCalibEnd = null;
+    state.azCalibScale = 1; // Visszaállítjuk az alap skálát
+alert("Azimuth calibration reset.");
+}
+
+
+    // === Csillagászati számítások (LST, Alt/Az) ===
+    function julianDate(date) {
+      // Meeus képlet
+      const Y = date.getUTCFullYear();
+      let M = date.getUTCMonth() + 1;
+      const D = date.getUTCDate() + (date.getUTCHours() / 24) + (date.getUTCMinutes() / (24 * 60)) + (date.getUTCSeconds() / (24 * 3600));
+      let A = Math.floor(Y / 100);
+      let B = 2 - A + Math.floor(A / 4);
+      if (M <= 2) {
+        M += 12;
+        Y2 = Y - 1;
+      } else {
+        Y2 = Y;
+      }
+      const JD = Math.floor(365.25 * (Y2 + 4716)) + Math.floor(30.6001 * (M + 1)) + D + B - 1524.5;
+      return JD;
+    }
+
+    function gmst(date) {
+      const JD = julianDate(date);
+      const T = (JD - 2451545.0) / 36525;
+      let gmst = 280.46061837 + 360.98564736629 * (JD - 2451545) + 0.000387933 * T * T - (T * T * T) / 38710000;
+      return norm360(gmst);
+    }
+
+    function lst(date, lonDeg) {
+      // helyi csillagidő (°). lonKelet pozitív.
+      return norm360(gmst(date) + lonDeg);
+    }
+
+    function radecToAltAz(raDeg, decDeg, latDeg, lonDeg, date) {
+      const LST = lst(date, lonDeg); // °
+      const HA = norm360(LST - raDeg); // óra szög °
+      const ha = toRad(HA);
+      const dec = toRad(decDeg);
+      const lat = toRad(latDeg);
+
+      const sinAlt = Math.sin(dec) * Math.sin(lat) + Math.cos(dec) * Math.cos(lat) * Math.cos(ha);
+      const alt = Math.asin(Math.min(1, Math.max(-1, sinAlt)));
+
+      const y = Math.sin(ha);
+      const x = Math.cos(ha) * Math.sin(lat) - Math.tan(dec) * Math.cos(lat);
+      // Eredeti képlet: 0° = Dél, mi: 0° = Észak
+      let az = Math.atan2(y, x);
+      let azDeg = norm360(toDeg(az) + 180);
+
+      return {
+        az: azDeg,
+        alt: toDeg(alt)
+      };
+    }
+
+    // === Állapot ===
+    const state = {
+      lat: null,
+      lon: null,
+      az: 0,
+      alt: 0,
+      azOffset: 0, // Új változó az azimut eltolás tárolására
+      altOffset: 0, // Új változó az altitúdó eltolás tárolására
+      stars: [],
+      target: null,
+      sensorOK: false,
+      geoOK: false,
+      azCalibStart: null,
+      azCalibScale: 1,
+      isCalibrating: false
+
+    };
+
+    // === UI elemek ===
+    const el = id => document.getElementById(id);
+    const azVal = el('azVal');
+    const altVal = el('altVal');
+    const goalAz = el('goalAz');
+    const goalAlt = el('goalAlt');
+    const dAz = el('dAz');
+    const dAlt = el('dAlt');
+    const sensorState = el('sensorState');
+    const geoState = el('geoState');
+    const targetInput = el('targetInput');
+    const targetsList = el('targetsList');
+    const thresholdInput = el('threshold');
+    const latInput = el('latInput');
+    const lonInput = el('lonInput');
+    const greenDot = el('greenDot');
+
+    // Canvas setup
+    const cvs = el('sky');
+    const ctx = cvs.getContext('2d');
+
+    function resize() {
+      const rect = cvs.getBoundingClientRect();
+      cvs.width = Math.floor(rect.width * devicePixelRatio);
+      cvs.height = Math.floor(rect.height * devicePixelRatio);
+    }
+    window.addEventListener('resize', resize);
+    resize();
+
+    function drawSky() {
+      ctx.clearRect(0, 0, cvs.width, cvs.height);
+      // egyszerű, csak a célhoz viszonyított offsetet mutató pontot rajzolunk
+      if (!state.target) return;
+      const thr = Number(thresholdInput.value || 2);
+      const {
+        az: tAz,
+        alt: tAlt
+      } = targetAltAz();
+      // delta fokok -> képernyő koordináták (egyszerű lineáris skála a vizuális visszajelzéshez)
+      const dAzDeg = shortestDegDelta(state.az, tAz);
+      const dAltDeg = (tAlt - state.alt);
+      const scale = Math.min(cvs.width, cvs.height) / (2 * thr); // thr fok = sugár
+      const x = cvs.width / 2 + dAzDeg * scale; // kelet (+) jobbra
+      const y = cvs.height / 2 - dAltDeg * scale; // felfelé pozitív alt
+      // célpont (kék)
+      ctx.beginPath();
+      ctx.arc(x, y, 6 * devicePixelRatio, 0, Math.PI * 2);
+      ctx.strokeStyle = '#7aa2ff';
+      ctx.lineWidth = 2 * devicePixelRatio;
+      ctx.stroke();
+      // közép célkereszt
+      ctx.beginPath();
+      ctx.arc(cvs.width / 2, cvs.height / 2, 40 * devicePixelRatio, 0, Math.PI * 2);
+      ctx.setLineDash([3 * devicePixelRatio, 6 * devicePixelRatio]);
+      ctx.strokeStyle = 'rgba(122,162,255,.35)';
+      ctx.lineWidth = 1 * devicePixelRatio;
+      ctx.stroke();
+      ctx.setLineDash([]);
+    }
+
+    function updateArrows() {
+      const thr = Number(thresholdInput.value || 2);
+      const {
+        az: tAz,
+        alt: tAlt
+      } = targetAltAz();
+      const dAzDeg = shortestDegDelta(state.az, tAz);
+      const dAltDeg = (tAlt - state.alt);
+      dAz.textContent = dAzDeg.toFixed(1);
+      dAlt.textContent = dAltDeg.toFixed(1);
+      goalAz.textContent = tAz.toFixed(2);
+      goalAlt.textContent = tAlt.toFixed(2);
+      const up = document.getElementById('arrowUp');
+      const down = document.getElementById('arrowDown');
+      const left = document.getElementById('arrowLeft');
+      const right = document.getElementById('arrowRight');
+      const inAz = Math.abs(dAzDeg) <= thr;
+      const inAlt = Math.abs(dAltDeg) <= thr;
+      // Zöld pötty középre ha mindkettőben benne vagyunk
+      if (inAz && inAlt) {
+        greenDot.style.display = 'block';
+        greenDot.style.left = 'calc(50% - 7px)';
+        greenDot.style.top = 'calc(50% - 7px)';
+      } else {
+        greenDot.style.display = 'none';
+      }
+      // Nyilak
+      up.classList.toggle('show', dAltDeg > thr);
+      down.classList.toggle('show', dAltDeg < -thr);
+      right.classList.toggle('show', dAzDeg > thr);
+      left.classList.toggle('show', dAzDeg < -thr);
+    }
+
+
+    // Astronomy polyfill ha nem töltődött be a könyvtár
+    if (typeof Astronomy === 'undefined') {
+        window.Astronomy = {
+            Equator: function(bodyName, date, options) {
+                // Egyszerűsített Nap számítás (J2000 epoch-hoz képest)
+                function sunPosition(date) {
+                    const JD = julianDate(date);
+                    const T = (JD - 2451545.0) / 36525;
+                    
+                    // Mean elements
+                    const L0 = 280.46646 + 36000.76983 * T + 0.0003032 * T * T;
+                    const M = 357.52911 + 35999.05029 * T - 0.0001537 * T * T;
+                    const e = 0.016708634 - 0.000042037 * T - 0.0000001267 * T * T;
+                    
+                    // Equation of center
+                    const C = (1.914602 - 0.004817 * T - 0.000014 * T * T) * Math.sin(toRad(M))
+                        + (0.019993 - 0.000101 * T) * Math.sin(toRad(2 * M))
+                        + 0.000289 * Math.sin(toRad(3 * M));
+                    
+                    // Sun's true longitude
+                    const L = L0 + C;
+                    
+                    // Convert to RA/Dec
+                    const obliq = 23.43929111; // Obliquity of ecliptic
+                    const ra = Math.atan2(
+                        Math.cos(toRad(obliq)) * Math.sin(toRad(L)),
+                        Math.cos(toRad(L))
+                    );
+                    const dec = Math.asin(
+                        Math.sin(toRad(obliq)) * Math.sin(toRad(L))
+                    );
+                    
+                    return {
+                        ra: toDeg(ra) / 15, // Convert to hours
+                        dec: toDeg(dec)
+                    };
+                }
+
+                // Egyszerűsített Hold számítás
+                function moonPosition(date) {
+                    const JD = julianDate(date);
+                    const T = (JD - 2451545.0) / 36525;
+                    
+                    // Mean elements
+                    const L0 = 218.3164477 + 481267.88123421 * T - 0.0015786 * T * T + T * T * T / 538841 - T * T * T * T / 65194000;
+                    const D0 = 297.8501921 + 445267.1114034 * T - 0.0018819 * T * T + T * T * T / 545868 - T * T * T * T / 113065000;
+                    const M0 = 357.5291092 + 35999.0502909 * T - 0.0001536 * T * T + T * T * T / 24490000;
+                    const F0 = 93.2720950 + 483202.0175233 * T - 0.0036539 * T * T - T * T * T / 3526000 + T * T * T * T / 863310000;
+                    
+                    // Simplified perturbations
+                    const dL = 6288.06 * Math.sin(toRad(D0))
+                        + 1274.34 * Math.sin(toRad(2 * D0 - M0))
+                        + 658.31 * Math.sin(toRad(2 * D0));
+                    
+                    const L = norm360(L0 + dL / 1000000);
+                    
+                    // Convert to RA/Dec
+                    const obliq = 23.43929111;
+                    const ra = Math.atan2(
+                        Math.cos(toRad(obliq)) * Math.sin(toRad(L)),
+                        Math.cos(toRad(L))
+                    );
+                    const dec = Math.asin(
+                        Math.sin(toRad(obliq)) * Math.sin(toRad(L))
+                    );
+                    
+                    const moonRAOffset = 0;   // órában (nem fokban!)
+                    const moonDecOffset = -1.64;    // fokban
+
+                    return {
+                        ra: (toDeg(ra) / 15) + moonRAOffset,
+                        dec: toDeg(dec) + moonDecOffset
+                    };
+                }
+
+                // Body selector
+                switch(bodyName) {
+                    case 'Sun':
+                        return sunPosition(date);
+                    case 'Moon':
+                        return moonPosition(date);
+                    default:
+                        throw new Error(`Body "${bodyName}" not supported in fallback mode`);
+                }
+            }
+        };
+        console.log('Using fallback Astronomy calculations');
+    }
+
+    // --- JAVÍTOTT EGYSZERŰ BOLYGÓ SZÁMÍTÁS KEPLER-ELEMEKKEL (Nap és Hold nélkül) ---
+    function calculatePlanetPositionSimple(planetName, date) {
+      const keplerElements = {
+        MERCURY: { a: 0.3871, e: 0.2056, I: 7.005, L: 252.251, lp: 77.457, Omega: 48.331, n: 4.09233445 },
+        VENUS:   { a: 0.7233, e: 0.0067, I: 3.3947, L: 181.9798, lp: 131.602, Omega: 76.6799, n: 1.60213034 },
+        EARTH:   { a: 1.0000, e: 0.0167, I: 0.0000, L: 100.464, lp: 102.937, Omega: -11.2606, n: 0.98560910 },
+        MARS:    { a: 1.5237, e: 0.0934, I: 1.850, L: -4.553, lp: -23.943, Omega: 49.558, n: 0.52402068 },
+        JUPITER: { a: 5.2026, e: 0.0485, I: 1.303, L: 34.396, lp: 14.728, Omega: 100.473, n: 0.08308529 },
+        SATURN:  { a: 9.5549, e: 0.0555, I: 2.485, L: 49.954, lp: 92.598, Omega: 113.662, n: 0.03344414 },
+        URANUS:  { a: 19.2184, e: 0.0463, I: 0.773, L: 313.238, lp: 170.954, Omega: 74.016, n: 0.01172834 },
+        NEPTUNE: { a: 30.1104, e: 0.0095, I: 1.770, L: -55.120, lp: 44.964, Omega: 131.784, n: 0.00598103 }
+      };
+
+      const J2000 = new Date(Date.UTC(2000, 0, 1, 12, 0, 0));
+      const EPSILON = toRad(23.43928);
+
+      function solveKepler(M, e) {
+        let E = M;
+        for (let i = 0; i < 10; i++) {
+          const dE = (E - e * Math.sin(E) - M) / (1 - e * Math.cos(E));
+          E -= dE;
+          if (Math.abs(dE) < 1e-6) break;
+        }
+        return E;
+      }
+
+      function heliocentricXYZ(body, date) {
+        const el = keplerElements[body.toUpperCase()];
+        if (!el) throw new Error(`Ismeretlen bolygó: ${body}`);
+        if(el.special) throw new Error("Speciális objektum, nincs Kepler-elem.");
+
+        const days = (date - J2000) / 86400000;
+        const M = toRad(norm360(el.L + el.n * days - el.lp));
+        const E = solveKepler(M, el.e);
+        const ν = 2 * Math.atan2(Math.sqrt(1 + el.e) * Math.sin(E / 2),
+                                 Math.sqrt(1 - el.e) * Math.cos(E / 2));
+        const r = el.a * (1 - el.e * Math.cos(E));
+
+        const x_orb = r * Math.cos(ν);
+        const y_orb = r * Math.sin(ν);
+
+        const Ω = toRad(el.Omega);
+        const i = toRad(el.I);
+        const ω = toRad(el.lp - el.Omega);
+
+        const x = (Math.cos(Ω) * Math.cos(ω + ν) - Math.sin(Ω) * Math.sin(ω + ν) * Math.cos(i)) * r;
+        const y = (Math.sin(Ω) * Math.cos(ω + ν) + Math.cos(Ω) * Math.sin(ω + ν) * Math.cos(i)) * r;
+        const z = Math.sin(ω + ν) * Math.sin(i) * r;
+
+        return { x, y, z };
+      }
+
+      function geocentricXYZ(body, date) {
+        const earth = heliocentricXYZ('EARTH', date);
+        const target = heliocentricXYZ(body, date);
+        return {
+          x: target.x - earth.x,
+          y: target.y - earth.y,
+          z: target.z - earth.z
+        };
+      }
+
+      function eclipticToEquatorial(x, y, z) {
+        const xe = x;
+        const ye = y * Math.cos(EPSILON) - z * Math.sin(EPSILON);
+        const ze = y * Math.sin(EPSILON) + z * Math.cos(EPSILON);
+        return {
+          // JAVÍTVA: norm360 használata a RA konverzióra
+          ra: norm360(toDeg(Math.atan2(ye, xe))),
+          dec: toDeg(Math.atan2(ze, Math.sqrt(xe ** 2 + ye ** 2)))
+        };
+      }
+
+      function planetRaDec(body, date = new Date()) {
+        const geo = geocentricXYZ(body, date);
+        return eclipticToEquatorial(geo.x, geo.y, geo.z);
+      }
+
+      return planetRaDec(planetName, date);
+    }
+    
+    // JAVÍTVA: A két 'calculatePlanetPosition' funkció összevonása.
+    function calculatePlanetPosition(target, date) {
+        if (target.type !== 'planet') {
+            return {
+                ra: target.raDeg,
+                dec: target.decDeg
+            };
+        }
+
+        if (typeof Astronomy !== 'undefined' && Astronomy.Equator) {
+            try {
+                // Az Astronomy.js könyvtár használata
+                const observer = new Astronomy.Observer(state.lat || 0, state.lon || 0, 0);
+                const eq = Astronomy.Equator(target.name, date, observer, true, true);
+                return {
+                    ra: eq.ra * 15,
+                    dec: eq.dec
+                };
+            } catch (e) {
+                console.warn(`Astronomy calculation error for ${target.name}, fallback used.`, e);
+            }
+        }
+
+        // Visszatérés a fallback-hez, ha az Astronomy nem működik
+        return calculatePlanetPositionSimple(target.name, date);
+    }
+
+    // === JAVÍTOTT targetAltAz FÜGGVÉNY ===
+    function targetAltAz() {
+      if (!state.target || state.lat == null || state.lon == null) return {
+        az: 0,
+        alt: 0
+      };
+      const now = new Date();
+
+      try {
+        const {
+          ra,
+          dec
+        } = calculatePlanetPosition(state.target, now);
+
+        if (ra === 0 && dec === 0 && state.target.type === 'planet') {
+          console.warn("Nulla koordináták a bolygóhoz:", state.target.name);
+        }
+
+        return radecToAltAz(ra, dec, state.lat, state.lon, now);
+      } catch (e) {
+        console.error("targetAltAz hiba:", e);
+        return {
+          az: 0,
+          alt: 0
+        };
+      }
+    }
+
+    function tick() {
+      azVal.textContent = state.az.toFixed(1);
+      altVal.textContent = state.alt.toFixed(1);
+      drawSky();
+      updateArrows();
+    }
+
+    // === Szenzorok (DeviceOrientation) ===
+    function handleOrientation(ev) {
+      let az;
+      if (typeof ev.webkitCompassHeading === 'number') {
+        az = ev.webkitCompassHeading;
+      } else if (typeof ev.alpha === 'number') {
+        az = 360 - ev.alpha;
+      } else {
+        az = state.az;
+      }
+
+      let alt = state.alt;
+      if (typeof ev.beta === 'number') {
+        alt = Math.max(-10, Math.min(90, ev.beta));
+      }
+
+      // Kalibrációs eltolás hozzáadása
+      state.az = norm360((az + state.azOffset) * (state.azCalibScale || 1));
+      state.alt = alt + state.altOffset;
+
+
+      tick();
+    }
+
+    function calibrate() {
+      if (!state.target || state.lat == null || state.lon == null) return;
+
+      try {
+        const {
+          az: tAz,
+          alt: tAlt
+        } = targetAltAz();
+        const dAzDeg = shortestDegDelta(state.az, tAz);
+        const dAltDeg = (tAlt - state.alt);
+
+        state.azOffset = state.azOffset + dAzDeg;
+        state.altOffset = state.altOffset + dAltDeg;
+
+        state.az = norm360(state.az + dAzDeg);
+        state.alt = state.alt + dAltDeg;
+
+        alert(`Calibration complete! New Az offset: ${state.azOffset.toFixed(2)}°, Alt eltolás: ${state.altOffset.toFixed(2)}°`);
+      } catch (e) {
+        alert(e.message);
+      }
+      tick();
+    }
+
+    async function requestSensorPermission() {
+      try {
+        if (window.DeviceOrientationEvent && typeof DeviceOrientationEvent.requestPermission === 'function') {
+          const g = await DeviceOrientationEvent.requestPermission();
+          if (g !== 'granted') throw new Error('A felhasználó elutasította');
+        }
+        window.addEventListener('deviceorientation', handleOrientation, true);
+        sensorState.textContent = 'Szenzor aktív';
+        sensorState.classList.remove('warn', 'err');
+        sensorState.classList.add('ok');
+        state.sensorOK = true;
+      } catch (e) {
+        sensorState.textContent = 'Szenzor inaktív';
+        sensorState.classList.remove('ok', 'warn');
+        sensorState.classList.add('err');
+      }
+    }
+
+    async function requestGeo() {
+      try {
+        const pos = await new Promise((res, rej) => navigator.geolocation.getCurrentPosition(res, rej, {
+          enableHighAccuracy: true,
+          timeout: 8000
+        }));
+        state.lat = pos.coords.latitude;
+        state.lon = pos.coords.longitude;
+        latInput.value = state.lat.toFixed(5);
+        lonInput.value = state.lon.toFixed(5);
+        geoState.textContent = `Lat ${state.lat.toFixed(4)}°, Lon ${state.lon.toFixed(4)}°`;
+        geoState.classList.add('ok');
+        state.geoOK = true;
+      } catch (e) {
+        geoState.textContent = 'Helymeghatározás sikertelen — add meg kézzel!';
+        geoState.classList.remove('ok');
+        geoState.classList.add('warn');
+      }
+    }
+
+    // Kézi beírás figyelése
+    latInput.addEventListener('change', () => {
+      const v = parseFloat(latInput.value);
+      if (!Number.isNaN(v)) state.lat = v;
+    });
+    lonInput.addEventListener('change', () => {
+      const v = parseFloat(lonInput.value);
+      if (!Number.isNaN(v)) state.lon = v;
+    });
+
+    // Cél kiválasztó
+    let wakeLock = null;
+    async function requestWakeLock() {
+      try {
+        if ('wakeLock' in navigator) {
+          wakeLock = await navigator.wakeLock.request('screen');
+          wakeLock.addEventListener('release', () => {
+            console.log('Wake Lock feloldva');
+          });
+          console.log('Wake Lock aktív');
+        }
+      } catch (err) {
+        console.error(`${err.name}, ${err.message}`);
+      }
+    }
+    document.addEventListener("visibilitychange", async () => {
+      if (wakeLock !== null && document.visibilityState === "visible") {
+        requestWakeLock();
+      }
+    });
+    window.addEventListener('load', () => {
+      requestWakeLock();
+      loadTargets();
+    });
+
+    // === JAVÍTOTT Cél kiválasztó és adatok betöltése ===
+    let allTargets = [];
+
+    async function loadTargets() {
+      let stars = [];
+      let deep = [];
+      const planetsToTrack = ["Sun", "Moon", "Mercury", "Venus", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune", "Pluto"];
+
+      // JSON fájlok betöltése (stars)
+      try {
+        const starsResp = await fetch('stars.json');
+        if (starsResp.ok) {
+          const js = await starsResp.json();
+          stars = js.objects.map(o => ({
+            name: o.name,
+            type: 'star', // Típus hozzáadása
+            raDeg: typeof o.right_ascension === 'number' ? o.right_ascension : parseRA(o.right_ascension || '0h0m0s'),
+            decDeg: typeof o.declination === 'number' ? o.declination : parseDec(o.declination || '+0°0\'0'),
+            magnitude: typeof o.magnitude === 'number' ? o.magnitude : parseFloat(o.magnitude)
+          }));
+          console.log(`Betöltve ${stars.length} csillag`);
+        }
+      } catch (e) {
+        console.warn("Nem sikerült betölteni a stars.json-t:", e);
+      }
+
+      // JSON fájlok betöltése (deep-sky)
+      try {
+        const deepResp = await fetch('deep-sky.json');
+        if (deepResp.ok) {
+          const jd = await deepResp.json();
+          deep = jd.objects.map(o => ({
+            name: o.name,
+            type: 'deep-sky', // Típus hozzáadása
+            raDeg: typeof o.right_ascension === 'number' ? o.right_ascension :
+              typeof o.ra === 'number' ? o.ra :
+              parseRA(o.right_ascension || o.ra || '0h0m0s'),
+            decDeg: typeof o.declination === 'number' ? o.declination :
+              typeof o.dec === 'number' ? o.dec :
+              parseDec(o.declination || o.dec || '+0°0\'0'),
+            magnitude: typeof o.magnitude === 'number' ? o.magnitude : parseFloat(o.magnitude)
+          }));
+          console.log(`Betöltve ${deep.length} deep-sky objektum`);
+        }
+      } catch (e) {
+        console.warn("Nem sikerült betölteni a deep-sky.json-t:", e);
+      }
+
+      // Bolygók hozzáadása
+      const planets = planetsToTrack.map(p => ({
+        name: p,
+        type: 'planet',
+        raDeg: null, // Dinamikusan számítjuk
+        decDeg: null // Dinamikusan számítjuk
+      }));
+
+      console.log("Bolygók hozzáadva:", planets.map(p => p.name));
+
+      // A célpontok összeillesztése
+      allTargets = [...stars, ...deep, ...planets];
+      console.log(`Összesen ${allTargets.length} célpont betöltve`);
+
+      // Fallback adatok, ha a JSON fájlok nem tölthetők be
+      if (stars.length === 0 && deep.length === 0) {
+        const fallbackStars = [{
+          name: 'Polaris',
+          type: 'star',
+          raDeg: parseRA('2h32m31.8s'),
+          decDeg: parseDec("+89°15'34.4"),
+          magnitude: 2.13
+        }, {
+          name: 'Antares',
+          type: 'star',
+          raDeg: parseRA('16h29m25.7s'),
+          decDeg: parseDec("-26°25′59.3"),
+          magnitude: 1.85
+        }];
+        allTargets = [...fallbackStars, ...planets];
+        console.log("Fallback adatok használva");
+      }
+
+      populateTargets(allTargets);
+
+      // Event listener a célpont kiválasztáshoz
+      targetInput.addEventListener('change', () => {
+        const selectedTarget = allTargets.find(t => {
+          const datalistValue = t.type === 'planet' ? t.name : `${t.name}${t.magnitude != null ? ` (mag ${t.magnitude})` : ''}`;
+          return datalistValue === targetInput.value;
+        });
+        if (selectedTarget) {
+          state.target = selectedTarget;
+          console.log("Új célpont kiválasztva:", selectedTarget.name, selectedTarget.type);
+        } else {
+          state.target = null;
+          console.log("Célpont törlése");
+        }
+        tick();
+      });
+
+      // Alapértelmezett célpont beállítása
+      const polIndex = allTargets.findIndex(s => /polaris/i.test(s.name));
+      if (polIndex >= 0) {
+        state.target = allTargets[polIndex];
+        targetInput.value = `${allTargets[polIndex].name}${allTargets[polIndex].magnitude != null ? ` (mag ${allTargets[polIndex].magnitude})` : ''}`;
+      } else if (allTargets.length > 0) {
+        state.target = allTargets[0];
+        targetInput.value = state.target.type === 'planet' ?
+          state.target.name :
+          `${state.target.name}${state.target.magnitude != null ? ` (mag ${state.target.magnitude})` : ''}`;
+      }
+
+      if (state.target) {
+        console.log("Alapértelmezett célpont:", state.target.name, state.target.type);
+      }
+
+      tick();
+    }
+
+    function populateTargets(list) {
+      targetsList.innerHTML = '';
+      list.forEach(s => {
+        const opt = document.createElement('option');
+        if (s.type === 'planet') {
+          opt.value = s.name;
+        } else {
+          opt.value = `${s.name}${s.magnitude != null ? ` (mag ${s.magnitude})` : ''}`;
+        }
+        targetsList.appendChild(opt);
+      });
+    }
+
+    // Eseménykezelők a gombokra
+    document.getElementById('btnPerm').addEventListener('click', requestSensorPermission);
+    document.getElementById('btnGeo').addEventListener('click', requestGeo);
+    document.getElementById('btnCalibrate').addEventListener('click', calibrate);
+    document.getElementById('btnReset').addEventListener('click', resetCalibration);
+
+    // Óra
+    function updateClock() {
+      document.getElementById('clock').textContent = new Date().toLocaleString();
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+
+    function resetCalibration() {
+      state.azOffset = 0;
+      state.altOffset = 0;
+alert("Calibration reset!");
+      tick();
+    }
+
+    // Indítás
+    loadTargets();
+
+    // Periodikus frissítés biztonságból (ha kevés szenzoresemény érkezik)
+    setInterval(tick, 200);
+  </script>
+</body>
+
+</html>

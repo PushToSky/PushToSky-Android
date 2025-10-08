@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PushToSky</title>
+  <style>
+    :root {
+      --bg: #0b1020;
+      --fg: #e6eefc;
+      --muted: #8fa1c7;
+      --accent: #4ade80;
+      --warn: #fbbf24;
+      --err: #ef4444;
+    }
+
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, "Apple Color Emoji", "Segoe UI Emoji"
+    }
+
+    .wrap {
+      display: flex;
+      flex-direction: column;
+      min-height: 100%
+    }
+
+    header {
+      padding: 12px 16px;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #18213f
+    }
+
+    header h1 {
+      font-size: 18px;
+      margin: 0;
+      font-weight: 700
+    }
+
+    header small {
+      color: var(--muted)
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 12px;
+      gap: 12px
+    }
+
+    .card {
+      border: 1px solid #18213f;
+      border-radius: 14px;
+      padding: 12px;
+      background: rgba(255, 255, 255, 0.02)
+    }
+
+    .controls {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      align-items: center
+    }
+
+    .controls label {
+      font-size: 12px;
+      color: var(--muted)
+    }
+
+    .controls select,
+    .controls input,
+    .controls button {
+      width: 100%;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid #263258;
+      background: #0f1530;
+      color: var(--fg);
+      box-sizing: border-box
+    }
+
+    .controls button {
+      cursor: pointer
+    }
+
+    .status {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px
+    }
+
+    .status div {
+      background: #0f1530;
+      border: 1px solid #263258;
+      border-radius: 10px;
+      padding: 10px
+    }
+
+    .status .val {
+      font-size: 18px;
+      font-variant-numeric: tabular-nums
+    }
+
+    .stage {
+      position: relative;
+      flex: 1;
+      min-height: 40vh;
+      display: flex;
+      align-items: center;
+      justify-content: center
+    }
+
+    .reticle {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      pointer-events: none
+    }
+
+    .reticle::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      border: 2px solid #7aa2ff;
+      border-radius: 50%
+    }
+
+    .reticle::after {
+      content: "";
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      border: 1px dashed #2a3a6b;
+      border-radius: 50%
+    }
+
+    canvas {
+      width: 100%;
+      height: 100%;
+      max-height: 55vh;
+      background: radial-gradient(1200px 700px at 50% 60%, rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0));
+      border: 1px solid #18213f;
+      border-radius: 14px
+    }
+
+    .arrows {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      grid-template-columns: auto 1fr auto;
+      pointer-events: none
+    }
+
+    .arrow {
+      display: grid;
+      place-items: center;
+      opacity: .1;
+      transition: opacity .15s ease;
+      font-size: 56px
+    }
+
+    .arrow.show {
+      opacity: 1
+    }
+
+    .arrow.up {
+      grid-row: 1;
+      grid-column: 2
+    }
+
+    .arrow.down {
+      grid-row: 3;
+      grid-column: 2
+    }
+
+    .arrow.left {
+      grid-row: 2;
+      grid-column: 1
+    }
+
+    .arrow.right {
+      grid-row: 2;
+      grid-column: 3
+    }
+
+    .dot {
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      background: var(--accent);
+      border-radius: 999px;
+      box-shadow: 0 0 0 3px rgba(74, 222, 128, .25)
+    }
+
+    footer {
+      padding: 10px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 12px
+    }
+
+    .chip {
+      display: inline-flex;
+      gap: 6px;
+      align-items: center;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid #263258;
+      background: #0f1530
+    }
+
+    .ok {
+      color: var(--accent)
+    }
+
+    .warn {
+      color: var(--warn)
+    }
+
+    .err {
+      color: var(--err)
+    }
+    .logoindex {
+          align-items: center;
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      
+      
+    </header>
+
+    <main>
+      <div class="card controls">
+        <div style="grid-column:1/-1; display:flex; flex-direction:column; gap:8px;">
+        <div style="text-align: center;">
+  <img src="pushtosky.png" width="100" alt="PushToSky Logo – Smart Telescope Control" class="logoindex" />
+  <br>
+  <label>Choose language</label>
+</div>
+
+          <button id="en" onclick="window.location.href='en.html'">English</button>
+          <button id="hu" onclick="window.location.href='hu.html'">Magyar</button>
+          <button id="usman" onclick="window.location.href='user_manual.html'">User manual / Használati útmutató</button>
+          
+        </div>
+      </div>
+
+    </main>
+
+    <footer>
+      <span class="chip"></span>
+    </footer>
+  </div>
+<script>
+let wakeLock = null;
+    async function requestWakeLock() {
+      try {
+        if ('wakeLock' in navigator) {
+          wakeLock = await navigator.wakeLock.request('screen');
+          wakeLock.addEventListener('release', () => {
+            console.log('Wake Lock feloldva');
+          });
+          console.log('Wake Lock aktív');
+        }
+      } catch (err) {
+        console.error(`${err.name}, ${err.message}`);
+      }
+    }
+    document.addEventListener("visibilitychange", async () => {
+      if (wakeLock !== null && document.visibilityState === "visible") {
+        requestWakeLock();
+      }
+    });
+    window.addEventListener('load', () => {
+      requestWakeLock();
+      loadTargets();
+    });
+</script>
+</body>
+
+</html>

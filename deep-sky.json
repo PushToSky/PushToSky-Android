@@ -1,0 +1,2873 @@
+{
+  "catalog": "deep-sky",
+  "objects": [
+    {
+        "name": "M 2",
+        "right_ascension": "21h33m28.3s",
+        "declination": "-0°49'16.5",
+        "magnitude": "7.39"
+    },
+    {
+        "name": "M 3",
+        "right_ascension": "13h42m10.8s",
+        "declination": "+28°22'51.8",
+        "magnitude": "6.46"
+    },
+    {
+        "name": "M 4 (Crab Globular Cluster)",
+        "right_ascension": "16h23m35.3s",
+        "declination": "-26°31'34.6",
+        "magnitude": "5.87"
+    },
+    {
+        "name": "M 5 (Rose Cluster)",
+        "right_ascension": "15h18m32.9s",
+        "declination": "+2°04'59.6",
+        "magnitude": "5.89"
+    },
+    {
+        "name": "M 9",
+        "right_ascension": "17h19m12.2s",
+        "declination": "-18°30'57.4",
+        "magnitude": "8.13"
+    },
+    {
+        "name": "M 10",
+        "right_ascension": "16h57m09.3s",
+        "declination": "-4°05'55.2",
+        "magnitude": "6.81"
+    },
+    {
+        "name": "M 12 (Gumball Globular Cluster)",
+        "right_ascension": "16h47m14.4s",
+        "declination": "-1°56'48.1",
+        "magnitude": "6.30"
+    },
+    {
+        "name": "M 13 (Great Star Cluster in Hercules)",
+        "right_ascension": "16h41m41.9s",
+        "declination": "+36°27'57.7",
+        "magnitude": "5.93"
+    },
+    {
+        "name": "M 14",
+        "right_ascension": "17h37m36.6s",
+        "declination": "-3°14'39.1",
+        "magnitude": "7.81"
+    },
+    {
+        "name": "M 15 (Pegasus Cluster)",
+        "right_ascension": "21h29m59.6s",
+        "declination": "+12°10'09.0",
+        "magnitude": "6.69"
+    },
+    {
+        "name": "M 19",
+        "right_ascension": "17h02m38.0s",
+        "declination": "-26°16'06.2",
+        "magnitude": "7.27"
+    },
+    {
+        "name": "M 22 (Great Sagittarius Cluster)",
+        "right_ascension": "18h36m24.8s",
+        "declination": "-23°54'16.6",
+        "magnitude": "5.76"
+    },
+    {
+        "name": "M 28",
+        "right_ascension": "18h24m33.7s",
+        "declination": "-24°52'11.4",
+        "magnitude": "7.46"
+    },
+    {
+        "name": "M 53",
+        "right_ascension": "13h12m54.3s",
+        "declination": "+18°10'16.6",
+        "magnitude": "7.90"
+    },
+    {
+        "name": "M 54",
+        "right_ascension": "18h55m04.3s",
+        "declination": "-30°28'48.4",
+        "magnitude": "8.91"
+    },
+    {
+        "name": "M 55 (The Summer Rose Star)",
+        "right_ascension": "19h40m00.9s",
+        "declination": "-30°57'52.8",
+        "magnitude": "9.56"
+    },
+    {
+        "name": "M 56",
+        "right_ascension": "19h16m36.6s",
+        "declination": "+30°11'13.3",
+        "magnitude": "8.56"
+    },
+    {
+        "name": "M 62 (Flickering Globular Cluster)",
+        "right_ascension": "17h01m12.9s",
+        "declination": "-30°06'47.5",
+        "magnitude": "7.01"
+    },
+    {
+        "name": "M 69",
+        "right_ascension": "18h31m24.0s",
+        "declination": "-32°20'55.2",
+        "magnitude": "9.48"
+    },
+    {
+        "name": "M 70",
+        "right_ascension": "18h43m13.7s",
+        "declination": "-32°17'33.4",
+        "magnitude": "9.15"
+    },
+    {
+        "name": "M 71 (Angelfish Cluster)",
+        "right_ascension": "19h53m47.6s",
+        "declination": "+18°46'55.3",
+        "magnitude": "8.60"
+    },
+    {
+        "name": "M 72",
+        "right_ascension": "20h53m28.9s",
+        "declination": "-12°32'08.6",
+        "magnitude": "10.26"
+    },
+    {
+        "name": "M 75",
+        "right_ascension": "20h06m06.0s",
+        "declination": "-21°55'17.0",
+        "magnitude": "9.82"
+    },
+    {
+        "name": "M 80",
+        "right_ascension": "16h17m02.5s",
+        "declination": "-22°58'34.6",
+        "magnitude": "7.69"
+    },
+    {
+        "name": "M 92",
+        "right_ascension": "17h17m07.9s",
+        "declination": "+43°08'27.1",
+        "magnitude": "6.63"
+    },
+    {
+        "name": "M 107 (The Crucifix Cluster)",
+        "right_ascension": "16h32m32.0s",
+        "declination": "-13°03'10.8",
+        "magnitude": "8.06"
+    },
+    {
+        "name": "NGC 2419 (Intergalactic Wanderer)",
+        "right_ascension": " 7h38m07.2s",
+        "declination": "+38°52'53.3",
+        "magnitude": "10.65"
+    },
+    {
+        "name": "NGC 4147 (Kick the Can Cluster)",
+        "right_ascension": "12h10m05.0s",
+        "declination": "+18°32'41.7",
+        "magnitude": "11.03"
+    },
+    {
+        "name": "NGC 5053",
+        "right_ascension": "13h16m26.2s",
+        "declination": "+17°42'12.0",
+        "magnitude": "10.18"
+    },
+    {
+        "name": "NGC 5466 (Snowglobe Cluster)",
+        "right_ascension": "14h05m26.6s",
+        "declination": "+28°32'18.1",
+        "magnitude": "9.86"
+    },
+    {
+        "name": "NGC 5634",
+        "right_ascension": "14h29m36.7s",
+        "declination": "-5°58'29.7",
+        "magnitude": "10.33"
+    },
+    {
+        "name": "NGC 5694",
+        "right_ascension": "14h39m36.0s",
+        "declination": "-26°32'19.3",
+        "magnitude": "11.61"
+    },
+    {
+        "name": "NGC 5824",
+        "right_ascension": "15h03m58.2s",
+        "declination": "-33°04'10.5",
+        "magnitude": "10.74"
+    },
+    {
+        "name": "NGC 5897 (Ghost Globular Cluster)",
+        "right_ascension": "15h17m24.1s",
+        "declination": "-21°00'36.2",
+        "magnitude": "8.93"
+    },
+    {
+        "name": "NGC 5986",
+        "right_ascension": "15h46m02.8s",
+        "declination": "-37°47'16.9",
+        "magnitude": "8.67"
+    },
+    {
+        "name": "NGC 6139",
+        "right_ascension": "16h27m40.1s",
+        "declination": "-38°51'03.2",
+        "magnitude": "11.41"
+    },
+    {
+        "name": "NGC 6144",
+        "right_ascension": "16h27m14.0s",
+        "declination": "-26°01'26.4",
+        "magnitude": "10.09"
+    },
+    {
+        "name": "NGC 6229 (Prize Comet Globular Cluster)",
+        "right_ascension": "16h46m59.0s",
+        "declination": "+47°31'55.0",
+        "magnitude": "9.99"
+    },
+    {
+        "name": "NGC 6235",
+        "right_ascension": "16h53m25.6s",
+        "declination": "-22°10'39.1",
+        "magnitude": "7.57"
+    },
+    {
+        "name": "NGC 6284",
+        "right_ascension": "17h04m29.1s",
+        "declination": "-24°45'52.3",
+        "magnitude": "7.85"
+    },
+    {
+        "name": "NGC 6287",
+        "right_ascension": "17h05m09.8s",
+        "declination": "-22°42'28.8",
+        "magnitude": "10.68"
+    },
+    {
+        "name": "NGC 6293",
+        "right_ascension": "17h10m10.8s",
+        "declination": "-26°34'55.9",
+        "magnitude": "9.49"
+    },
+    {
+        "name": "NGC 6304",
+        "right_ascension": "17h14m32.7s",
+        "declination": "-29°27'45.9",
+        "magnitude": "9.60"
+    },
+    {
+        "name": "NGC 6316",
+        "right_ascension": "17h16m37.8s",
+        "declination": "-28°08'26.1",
+        "magnitude": "9.55"
+    },
+    {
+        "name": "NGC 6342",
+        "right_ascension": "17h21m10.6s",
+        "declination": "-19°35'13.9",
+        "magnitude": "10.35"
+    },
+    {
+        "name": "NGC 6355",
+        "right_ascension": "17h23m59.1s",
+        "declination": "-26°21'13.8",
+        "magnitude": "11.52"
+    },
+    {
+        "name": "NGC 6356",
+        "right_ascension": "17h23m35.4s",
+        "declination": "-17°48'45.5",
+        "magnitude": "7.73"
+    },
+    {
+        "name": "NGC 6366",
+        "right_ascension": "17h27m44.7s",
+        "declination": "-5°04'41.8",
+        "magnitude": "9.72"
+    },
+    {
+        "name": "NGC 6401",
+        "right_ascension": "17h38m37.5s",
+        "declination": "-23°54'32.0",
+        "magnitude": "11.13"
+    },
+    {
+        "name": "NGC 6426",
+        "right_ascension": "17h44m55.2s",
+        "declination": "+3°10'20.7",
+        "magnitude": "11.09"
+    },
+    {
+        "name": "NGC 6440",
+        "right_ascension": "17h48m53.2s",
+        "declination": "-20°21'33.6",
+        "magnitude": "10.46"
+    },
+    {
+        "name": "NGC 6441 (Silver Nugget Cluster)",
+        "right_ascension": "17h50m13.7s",
+        "declination": "-37°03'09.7",
+        "magnitude": "9.43"
+    },
+    {
+        "name": "NGC 6522",
+        "right_ascension": "18h03m34.8s",
+        "declination": "-30°02'04.3",
+        "magnitude": "10.15"
+    },
+    {
+        "name": "NGC 6528",
+        "right_ascension": "18h04m50.3s",
+        "declination": "-30°03'22.8",
+        "magnitude": "11.32"
+    },
+    {
+        "name": "NGC 6535",
+        "right_ascension": "18h03m51.1s",
+        "declination": "-0°17'44.3",
+        "magnitude": "10.05"
+    },
+    {
+        "name": "NGC 6539",
+        "right_ascension": "18h04m50.4s",
+        "declination": "-7°35'04.1",
+        "magnitude": "9.14"
+    },
+    {
+        "name": "NGC 6544 (Starfish Cluster)",
+        "right_ascension": "18h07m21.3s",
+        "declination": "-24°59'50.8",
+        "magnitude": "10.38"
+    },
+    {
+        "name": "NGC 6553",
+        "right_ascension": "18h09m16.4s",
+        "declination": "-25°54'28.5",
+        "magnitude": "8.81"
+    },
+    {
+        "name": "NGC 6569",
+        "right_ascension": "18h13m39.6s",
+        "declination": "-31°49'37.6",
+        "magnitude": "10.29"
+    },
+    {
+        "name": "NGC 6624",
+        "right_ascension": "18h23m41.3s",
+        "declination": "-30°21'41.4",
+        "magnitude": "9.89"
+    },
+    {
+        "name": "NGC 6638",
+        "right_ascension": "18h30m57.1s",
+        "declination": "-25°29'47.2",
+        "magnitude": "10.22"
+    },
+    {
+        "name": "NGC 6642 (Tadpole Cluster)",
+        "right_ascension": "18h31m55.0s",
+        "declination": "-23°28'33.6",
+        "magnitude": "10.71"
+    },
+    {
+        "name": "NGC 6652",
+        "right_ascension": "18h35m46.5s",
+        "declination": "-32°59'28.8",
+        "magnitude": "10.84"
+    },
+    {
+        "name": "NGC 6712",
+        "right_ascension": "18h53m05.2s",
+        "declination": "-8°42'16.5",
+        "magnitude": "8.97"
+    },
+    {
+        "name": "NGC 6717",
+        "right_ascension": "18h55m07.0s",
+        "declination": "-22°42'04.1",
+        "magnitude": "10.85"
+    },
+    {
+        "name": "NGC 6723 (Chandelier Cluster)",
+        "right_ascension": "18h59m34.2s",
+        "declination": "-36°37'58.6",
+        "magnitude": "10.76"
+    },
+    {
+        "name": "NGC 6760",
+        "right_ascension": "19h11m13.0s",
+        "declination": "+1°01'57.2",
+        "magnitude": "10.01"
+    },
+    {
+        "name": "NGC 6934",
+        "right_ascension": "20h34m12.5s",
+        "declination": "+7°24'24.3",
+        "magnitude": "9.10"
+    },
+    {
+        "name": "NGC 7006",
+        "right_ascension": "21h01m30.7s",
+        "declination": "+16°11'25.0",
+        "magnitude": "10.71"
+    },
+    {
+        "name": "Footprint Nebula",
+        "right_ascension": "19h36m20.2s",
+        "declination": "+29°33'03.1",
+        "magnitude": "11.91"
+    },
+    {
+        "name": "M 6 (Butterfly Cluster)",
+        "right_ascension": "17h40m20.5s",
+        "declination": "-32°15'14.0",
+        "magnitude": "5.02"
+    },
+    {
+        "name": "M 7 (Ptolemy's Cluster)",
+        "right_ascension": "17h53m51.8s",
+        "declination": "-34°47'38.5",
+        "magnitude": "4.50"
+    },
+    {
+        "name": "M 8 (Lagoon Nebula)",
+        "right_ascension": "18h03m37.6s",
+        "declination": "-24°22'41.0",
+        "magnitude": "6.49"
+    },
+    {
+        "name": "IC 10 (Starburst Galaxy)",
+        "right_ascension": " 0h20m25.2s",
+        "declination": "+59°17'29.5",
+        "magnitude": "9.76"
+    },
+    {
+        "name": "M 11 (Wild Duck Cluster)",
+        "right_ascension": "18h51m05.9s",
+        "declination": "-6°16'06.4",
+        "magnitude": "6.08"
+    },
+    {
+        "name": "M 16 (Eagle Nebula)",
+        "right_ascension": "18h18m48.7s",
+        "declination": "-13°48'22.0",
+        "magnitude": "6.32"
+    },
+    {
+        "name": "M 17 (Omega Nebula)",
+        "right_ascension": "18h20m47.8s",
+        "declination": "-16°10'16.7",
+        "magnitude": "6.35"
+    },
+    {
+        "name": "M 18 (Black Swan Cluster)",
+        "right_ascension": "18h19m58.8s",
+        "declination": "-17°06'04.9",
+        "magnitude": "7.26"
+    },
+    {
+        "name": "M 20 (Trifid Nebula)",
+        "right_ascension": "18h02m42.7s",
+        "declination": "-22°58'19.0",
+        "magnitude": "8.95"
+    },
+    {
+        "name": "M 21 (Webb's Cross)",
+        "right_ascension": "18h04m13.6s",
+        "declination": "-22°29'23.6",
+        "magnitude": "6.34"
+    },
+    {
+        "name": "M 23",
+        "right_ascension": "17h57m04.7s",
+        "declination": "-18°59'04.6",
+        "magnitude": "5.86"
+    },
+    {
+        "name": "M 24 (Sagittarius Star Cloud)",
+        "right_ascension": "18h16m48.7s",
+        "declination": "-18°32'58.2",
+        "magnitude": "4.98"
+    },
+    {
+        "name": "M 25",
+        "right_ascension": "18h31m47.8s",
+        "declination": "-19°06'59.4",
+        "magnitude": "5.01"
+    },
+    {
+        "name": "M 26",
+        "right_ascension": "18h45m18.8s",
+        "declination": "-9°22'54.0",
+        "magnitude": "8.30"
+    },
+    {
+        "name": "M 27 (Dumbbell Nebula)",
+        "right_ascension": "19h59m37.5s",
+        "declination": "+22°43'26.3",
+        "magnitude": "7.59"
+    },
+    {
+        "name": "M 29 (Cooling Tower Cluster)",
+        "right_ascension": "20h23m57.4s",
+        "declination": "+38°31'33.7",
+        "magnitude": "6.78"
+    },
+    {
+        "name": "M 31 (Andromeda Galaxy)",
+        "right_ascension": " 0h42m45.6s",
+        "declination": "+41°16'05.2",
+        "magnitude": "4.00"
+    },
+    {
+        "name": "M 32",
+        "right_ascension": " 0h42m43.1s",
+        "declination": "+40°51'52.4",
+        "magnitude": "8.71"
+    },
+    {
+        "name": "M 33 (Triangulum Galaxy)",
+        "right_ascension": " 1h33m51.8s",
+        "declination": "+30°39'34.5",
+        "magnitude": "9.61"
+    },
+    {
+        "name": "M 34 (Spiral Cluster)",
+        "right_ascension": " 2h42m05.7s",
+        "declination": "+42°45'36.6",
+        "magnitude": "6.91"
+    },
+    {
+        "name": "M 39",
+        "right_ascension": "21h31m49.9s",
+        "declination": "+48°26'05.9",
+        "magnitude": "4.79"
+    },
+    {
+        "name": "M 40 (Winnecke 4)",
+        "right_ascension": "12h22m10.5s",
+        "declination": "+58°05'11.3",
+        "magnitude": "9.81"
+    },
+    {
+        "name": "NGC 40 (Bow-Tie Nebula)",
+        "right_ascension": " 0h13m04.6s",
+        "declination": "+72°31'11.9",
+        "magnitude": "10.90"
+    },
+    {
+        "name": "M 49",
+        "right_ascension": "12h29m45.8s",
+        "declination": "+8°00'10.2",
+        "magnitude": "8.70"
+    },
+    {
+        "name": "M 51 (Whirlpool Galaxy)",
+        "right_ascension": "13h29m51.5s",
+        "declination": "+47°11'58.6",
+        "magnitude": "8.25"
+    },
+    {
+        "name": "M 52 (Cassiopeia Salt-and-Pepper Cluster)",
+        "right_ascension": "23h24m50.5s",
+        "declination": "+61°35'32.8",
+        "magnitude": "7.13"
+    },
+    {
+        "name": "M 57 (Ring Nebula)",
+        "right_ascension": "18h53m36.1s",
+        "declination": "+33°01'58.9",
+        "magnitude": "8.95"
+    },
+    {
+        "name": "M 58",
+        "right_ascension": "12h37m42.6s",
+        "declination": "+11°49'14.6",
+        "magnitude": "9.92"
+    },
+    {
+        "name": "M 59",
+        "right_ascension": "12h42m01.3s",
+        "declination": "+11°38'58.4",
+        "magnitude": "9.86"
+    },
+    {
+        "name": "M 60",
+        "right_ascension": "12h43m39.0s",
+        "declination": "+11°33'18.9",
+        "magnitude": "9.05"
+    },
+    {
+        "name": "M 61 (Swelling Spiral Galaxy)",
+        "right_ascension": "12h21m53.9s",
+        "declination": "+4°28'33.0",
+        "magnitude": "10.00"
+    },
+    {
+        "name": "M 63 (Sunflower Galaxy)",
+        "right_ascension": "13h15m48.2s",
+        "declination": "+42°02'00.1",
+        "magnitude": "8.76"
+    },
+    {
+        "name": "M 64 (Black Eye Galaxy)",
+        "right_ascension": "12h56m42.7s",
+        "declination": "+21°41'09.0",
+        "magnitude": "8.70"
+    },
+    {
+        "name": "M 65 (Leo Triplet)",
+        "right_ascension": "11h18m54.7s",
+        "declination": "+13°05'40.3",
+        "magnitude": "9.72"
+    },
+    {
+        "name": "M 66 (Leo Triplet)",
+        "right_ascension": "11h20m13.8s",
+        "declination": "+12°59'37.0",
+        "magnitude": "9.32"
+    },
+    {
+        "name": "M 73",
+        "right_ascension": "20h59m01.2s",
+        "declination": "-12°37'42.2",
+        "magnitude": "10.11"
+    },
+    {
+        "name": "M 76 (Little Dumbbell Nebula)",
+        "right_ascension": " 1h42m21.2s",
+        "declination": "+51°34'23.7",
+        "magnitude": "10.58"
+    },
+    {
+        "name": "M 81 (Bode's Galaxy)",
+        "right_ascension": " 9h55m29.6s",
+        "declination": "+69°03'56.7",
+        "magnitude": "7.10"
+    },
+    {
+        "name": "M 82 (Cigar Galaxy)",
+        "right_ascension": " 9h55m48.8s",
+        "declination": "+69°40'48.5",
+        "magnitude": "8.60"
+    },
+    {
+        "name": "M 83 (Southern Pinwheel Galaxy)",
+        "right_ascension": "13h37m00.0s",
+        "declination": "-29°51'57.9",
+        "magnitude": "9.28"
+    },
+    {
+        "name": "M 84 (Markarian's Chain)",
+        "right_ascension": "12h25m02.7s",
+        "declination": "+12°53'22.6",
+        "magnitude": "9.37"
+    },
+    {
+        "name": "M 85",
+        "right_ascension": "12h25m23.0s",
+        "declination": "+18°11'38.1",
+        "magnitude": "9.34"
+    },
+    {
+        "name": "M 86 (Markarian's Chain)",
+        "right_ascension": "12h26m10.7s",
+        "declination": "+12°56'55.0",
+        "magnitude": "9.17"
+    },
+    {
+        "name": "M 87 (Virgo Galaxy)",
+        "right_ascension": "12h30m48.4s",
+        "declination": "+12°23'37.5",
+        "magnitude": "8.87"
+    },
+    {
+        "name": "M 88",
+        "right_ascension": "12h31m58.2s",
+        "declination": "+14°25'23.3",
+        "magnitude": "9.85"
+    },
+    {
+        "name": "M 89",
+        "right_ascension": "12h35m38.8s",
+        "declination": "+12°33'31.3",
+        "magnitude": "10.06"
+    },
+    {
+        "name": "M 90",
+        "right_ascension": "12h36m48.8s",
+        "declination": "+13°09'56.0",
+        "magnitude": "9.75"
+    },
+    {
+        "name": "M 91",
+        "right_ascension": "12h35m25.4s",
+        "declination": "+14°29'56.6",
+        "magnitude": "10.45"
+    },
+    {
+        "name": "M 94 (Croc's Eye Galaxy)",
+        "right_ascension": "12h50m51.9s",
+        "declination": "+41°07'26.1",
+        "magnitude": "8.37"
+    },
+    {
+        "name": "M 95",
+        "right_ascension": "10h43m56.5s",
+        "declination": "+11°42'20.7",
+        "magnitude": "10.37"
+    },
+    {
+        "name": "M 96",
+        "right_ascension": "10h46m44.5s",
+        "declination": "+11°49'19.5",
+        "magnitude": "9.94"
+    },
+    {
+        "name": "M 97 (Owl Nebula)",
+        "right_ascension": "11h14m45.6s",
+        "declination": "+55°01'17.3",
+        "magnitude": "10.09"
+    },
+    {
+        "name": "M 98",
+        "right_ascension": "12h13m47.2s",
+        "declination": "+14°54'11.2",
+        "magnitude": "10.37"
+    },
+    {
+        "name": "M 99 (Virgo Cluster Pinwheel)",
+        "right_ascension": "12h18m48.5s",
+        "declination": "+14°25'08.9",
+        "magnitude": "10.17"
+    },
+    {
+        "name": "M 100 (Blowdryer Galaxy)",
+        "right_ascension": "12h22m53.8s",
+        "declination": "+15°49'30.4",
+        "magnitude": "9.66"
+    },
+    {
+        "name": "M 101 (Pinwheel Galaxy)",
+        "right_ascension": "14h03m11.5s",
+        "declination": "+54°21'12.9",
+        "magnitude": "8.04"
+    },
+    {
+        "name": "M 102 (Spindle Galaxy)",
+        "right_ascension": "15h06m29.0s",
+        "declination": "+55°46'07.1",
+        "magnitude": "10.03"
+    },
+    {
+        "name": "NGC 103",
+        "right_ascension": " 0h25m07.0s",
+        "declination": "+61°20'18.2",
+        "magnitude": "10.05"
+    },
+    {
+        "name": "M 103",
+        "right_ascension": " 1h33m24.7s",
+        "declination": "+60°38'50.7",
+        "magnitude": "7.72"
+    },
+    {
+        "name": "M 104 (Sombrero Galaxy)",
+        "right_ascension": "12h39m58.4s",
+        "declination": "-11°37'18.2",
+        "magnitude": "8.62"
+    },
+    {
+        "name": "M 105",
+        "right_ascension": "10h47m48.3s",
+        "declination": "+12°35'01.7",
+        "magnitude": "9.91"
+    },
+    {
+        "name": "M 106",
+        "right_ascension": "12h18m56.0s",
+        "declination": "+47°18'25.8",
+        "magnitude": "8.57"
+    },
+    {
+        "name": "M 108 (Surfboard Galaxy)",
+        "right_ascension": "11h11m28.8s",
+        "declination": "+55°40'35.2",
+        "magnitude": "10.19"
+    },
+    {
+        "name": "M 109 (Vacuum Cleaner Galaxy)",
+        "right_ascension": "11h57m34.1s",
+        "declination": "+53°22'39.6",
+        "magnitude": "9.98"
+    },
+    {
+        "name": "M 110",
+        "right_ascension": " 0h40m23.4s",
+        "declination": "+41°41'04.7",
+        "magnitude": "8.67"
+    },
+    {
+        "name": "NGC 129",
+        "right_ascension": " 0h30m02.1s",
+        "declination": "+60°12'58.9",
+        "magnitude": "6.76"
+    },
+    {
+        "name": "NGC 133",
+        "right_ascension": " 0h31m14.3s",
+        "declination": "+63°21'54.6",
+        "magnitude": "9.64"
+    },
+    {
+        "name": "NGC 136",
+        "right_ascension": " 0h31m38.1s",
+        "declination": "+61°30'29.7",
+        "magnitude": "11.55"
+    },
+    {
+        "name": "NGC 146",
+        "right_ascension": " 0h33m09.5s",
+        "declination": "+63°17'53.3",
+        "magnitude": "9.34"
+    },
+    {
+        "name": "NGC 147",
+        "right_ascension": " 0h33m13.7s",
+        "declination": "+48°30'27.9",
+        "magnitude": "9.85"
+    },
+    {
+        "name": "NGC 185",
+        "right_ascension": " 0h38m59.5s",
+        "declination": "+48°20'10.8",
+        "magnitude": "9.57"
+    },
+    {
+        "name": "NGC 188 (Polarissima Cluster)",
+        "right_ascension": " 0h48m37.6s",
+        "declination": "+85°15'06.4",
+        "magnitude": "8.28"
+    },
+    {
+        "name": "NGC 189",
+        "right_ascension": " 0h39m30.9s",
+        "declination": "+61°06'47.4",
+        "magnitude": "9.06"
+    },
+    {
+        "name": "NGC 225 (Sailboat Cluster)",
+        "right_ascension": " 0h43m41.2s",
+        "declination": "+61°46'23.0",
+        "magnitude": "7.26"
+    },
+    {
+        "name": "IC 334",
+        "right_ascension": " 3h45m17.6s",
+        "declination": "+76°38'01.1",
+        "magnitude": "11.56"
+    },
+    {
+        "name": "IC 342 (Maffei 1 Group)",
+        "right_ascension": " 3h46m48.8s",
+        "declination": "+68°05'31.2",
+        "magnitude": "9.39"
+    },
+    {
+        "name": "NGC 381",
+        "right_ascension": " 1h08m21.8s",
+        "declination": "+61°34'53.7",
+        "magnitude": "9.57"
+    },
+    {
+        "name": "NGC 436",
+        "right_ascension": " 1h15m59.7s",
+        "declination": "+58°48'35.1",
+        "magnitude": "9.10"
+    },
+    {
+        "name": "NGC 457 (Dragonfly Cluster)",
+        "right_ascension": " 1h19m36.7s",
+        "declination": "+58°17'05.1",
+        "magnitude": "6.71"
+    },
+    {
+        "name": "NGC 559",
+        "right_ascension": " 1h29m33.0s",
+        "declination": "+63°17'57.4",
+        "magnitude": "9.78"
+    },
+    {
+        "name": "NGC 609",
+        "right_ascension": " 1h36m24.6s",
+        "declination": "+64°31'55.7",
+        "magnitude": "11.27"
+    },
+    {
+        "name": "NGC 637",
+        "right_ascension": " 1h43m05.8s",
+        "declination": "+64°02'13.5",
+        "magnitude": "8.48"
+    },
+    {
+        "name": "NGC 654 (Fuzzy Butterfly Cluster)",
+        "right_ascension": " 1h44m01.6s",
+        "declination": "+61°52'55.9",
+        "magnitude": "6.80"
+    },
+    {
+        "name": "NGC 659 (Yin-Yang Cluster)",
+        "right_ascension": " 1h44m25.5s",
+        "declination": "+60°40'02.2",
+        "magnitude": "8.21"
+    },
+    {
+        "name": "NGC 663 (Lawnmower Cluster)",
+        "right_ascension": " 1h46m10.4s",
+        "declination": "+61°13'56.0",
+        "magnitude": "7.40"
+    },
+    {
+        "name": "NGC 744",
+        "right_ascension": " 1h58m37.2s",
+        "declination": "+55°28'03.0",
+        "magnitude": "8.29"
+    },
+    {
+        "name": "NGC 752",
+        "right_ascension": " 1h57m41.9s",
+        "declination": "+37°47'02.0",
+        "magnitude": "7.27"
+    },
+    {
+        "name": "NGC 869 (Double Cluster)",
+        "right_ascension": " 2h19m01.1s",
+        "declination": "+57°07'30.6",
+        "magnitude": "4.19"
+    },
+    {
+        "name": "NGC 884 (Double Cluster)",
+        "right_ascension": " 2h22m24.1s",
+        "declination": "+57°07'19.7",
+        "magnitude": "4.19"
+    },
+    {
+        "name": "NGC 891 (The Silver Sliver Galaxy)",
+        "right_ascension": " 2h22m33.7s",
+        "declination": "+42°20'47.9",
+        "magnitude": "11.24"
+    },
+    {
+        "name": "NGC 956",
+        "right_ascension": " 2h32m15.8s",
+        "declination": "+44°33'39.8",
+        "magnitude": "9.86"
+    },
+    {
+        "name": "NGC 957",
+        "right_ascension": " 2h33m22.1s",
+        "declination": "+57°33'25.3",
+        "magnitude": "7.99"
+    },
+    {
+        "name": "NGC 1023 (Perseus Lenticular Galaxy)",
+        "right_ascension": " 2h40m24.6s",
+        "declination": "+39°03'42.3",
+        "magnitude": "11.97"
+    },
+    {
+        "name": "NGC 1027",
+        "right_ascension": " 2h42m43.9s",
+        "declination": "+61°37'46.7",
+        "magnitude": "7.04"
+    },
+    {
+        "name": "NGC 1245 (Patrick Starfish Cluster)",
+        "right_ascension": " 3h14m48.7s",
+        "declination": "+47°15'02.2",
+        "magnitude": "9.36"
+    },
+    {
+        "name": "IC 1287",
+        "right_ascension": "18h32m00.8s",
+        "declination": "-10°47'55.7",
+        "magnitude": "5.78"
+    },
+    {
+        "name": "IC 1369",
+        "right_ascension": "21h12m13.3s",
+        "declination": "+47°45'26.3",
+        "magnitude": "8.98"
+    },
+    {
+        "name": "IC 1396 (Elephant's Trunk Nebula)",
+        "right_ascension": "21h39m02.3s",
+        "declination": "+57°29'30.0",
+        "magnitude": "3.68"
+    },
+    {
+        "name": "IC 1434",
+        "right_ascension": "22h10m35.5s",
+        "declination": "+52°50'37.9",
+        "magnitude": "9.20"
+    },
+    {
+        "name": "IC 1442",
+        "right_ascension": "22h16m32.1s",
+        "declination": "+54°03'03.7",
+        "magnitude": "9.30"
+    },
+    {
+        "name": "NGC 1444",
+        "right_ascension": " 3h49m23.9s",
+        "declination": "+52°38'13.4",
+        "magnitude": "7.25"
+    },
+    {
+        "name": "NGC 1496",
+        "right_ascension": " 4h04m32.0s",
+        "declination": "+52°39'31.5",
+        "magnitude": "10.27"
+    },
+    {
+        "name": "NGC 1501 (Oyster Nebula)",
+        "right_ascension": " 4h06m59.4s",
+        "declination": "+60°55'01.4",
+        "magnitude": "11.90"
+    },
+    {
+        "name": "NGC 1502 (Jolly Roger Cluster)",
+        "right_ascension": " 4h07m49.9s",
+        "declination": "+62°19'41.8",
+        "magnitude": "7.27"
+    },
+    {
+        "name": "NGC 1513",
+        "right_ascension": " 4h09m57.0s",
+        "declination": "+49°30'44.3",
+        "magnitude": "9.33"
+    },
+    {
+        "name": "NGC 1528 (m & m Double Cluster)",
+        "right_ascension": " 4h15m23.0s",
+        "declination": "+51°12'43.8",
+        "magnitude": "7.18"
+    },
+    {
+        "name": "NGC 1545 (m & m Double Cluster)",
+        "right_ascension": " 4h20m56.8s",
+        "declination": "+50°15'00.9",
+        "magnitude": "7.08"
+    },
+    {
+        "name": "NGC 1569",
+        "right_ascension": " 4h30m48.9s",
+        "declination": "+64°50'38.5",
+        "magnitude": "11.37"
+    },
+    {
+        "name": "NGC 1582",
+        "right_ascension": " 4h32m15.2s",
+        "declination": "+43°50'35.6",
+        "magnitude": "9.66"
+    },
+    {
+        "name": "IC 1590",
+        "right_ascension": " 0h52m50.7s",
+        "declination": "+56°37'34.4",
+        "magnitude": "7.70"
+    },
+    {
+        "name": "NGC 1664 (Kite Cluster)",
+        "right_ascension": " 4h51m05.7s",
+        "declination": "+43°40'22.4",
+        "magnitude": "10.47"
+    },
+    {
+        "name": "IC 1805 (Heart Nebula)",
+        "right_ascension": " 2h32m43.1s",
+        "declination": "+61°26'48.3",
+        "magnitude": "6.84"
+    },
+    {
+        "name": "IC 1848 (Soul Nebula)",
+        "right_ascension": " 2h51m07.3s",
+        "declination": "+60°24'24.0",
+        "magnitude": "6.86"
+    },
+    {
+        "name": "NGC 1961",
+        "right_ascension": " 5h42m03.4s",
+        "declination": "+69°22'28.4",
+        "magnitude": "11.27"
+    },
+    {
+        "name": "NGC 2126",
+        "right_ascension": " 6h02m34.6s",
+        "declination": "+49°52'11.2",
+        "magnitude": "11.03"
+    },
+    {
+        "name": "NGC 2146 (Dusty Hand Galaxy)",
+        "right_ascension": " 6h18m34.3s",
+        "declination": "+78°21'11.1",
+        "magnitude": "10.81"
+    },
+    {
+        "name": "NGC 2281 (Broken Heart Cluster)",
+        "right_ascension": " 6h48m16.0s",
+        "declination": "+41°04'36.7",
+        "magnitude": "7.65"
+    },
+    {
+        "name": "NGC 2366",
+        "right_ascension": " 7h28m49.1s",
+        "declination": "+69°12'22.3",
+        "magnitude": "11.11"
+    },
+    {
+        "name": "NGC 2403",
+        "right_ascension": " 7h36m49.0s",
+        "declination": "+65°36'01.6",
+        "magnitude": "9.18"
+    },
+    {
+        "name": "IC 2574 (Coddington's Nebula)",
+        "right_ascension": "10h28m20.1s",
+        "declination": "+68°24'47.9",
+        "magnitude": "10.56"
+    },
+    {
+        "name": "NGC 2655",
+        "right_ascension": " 8h55m31.9s",
+        "declination": "+78°13'18.8",
+        "magnitude": "11.28"
+    },
+    {
+        "name": "NGC 2681",
+        "right_ascension": " 8h53m30.8s",
+        "declination": "+51°18'49.1",
+        "magnitude": "10.64"
+    },
+    {
+        "name": "NGC 2742",
+        "right_ascension": " 9h07m31.1s",
+        "declination": "+60°28'44.7",
+        "magnitude": "11.93"
+    },
+    {
+        "name": "NGC 2768",
+        "right_ascension": " 9h11m35.1s",
+        "declination": "+60°02'13.5",
+        "magnitude": "10.13"
+    },
+    {
+        "name": "NGC 2841 (Tiger's Eye Galaxy)",
+        "right_ascension": " 9h22m00.7s",
+        "declination": "+50°58'36.9",
+        "magnitude": "9.54"
+    },
+    {
+        "name": "NGC 2859",
+        "right_ascension": " 9h24m17.0s",
+        "declination": "+34°30'52.1",
+        "magnitude": "11.96"
+    },
+    {
+        "name": "NGC 2903",
+        "right_ascension": " 9h32m08.8s",
+        "declination": "+21°30'08.6",
+        "magnitude": "10.91"
+    },
+    {
+        "name": "NGC 2950",
+        "right_ascension": " 9h42m32.7s",
+        "declination": "+58°51'06.3",
+        "magnitude": "11.46"
+    },
+    {
+        "name": "NGC 2976",
+        "right_ascension": " 9h47m12.1s",
+        "declination": "+67°55'00.1",
+        "magnitude": "10.37"
+    },
+    {
+        "name": "NGC 2985",
+        "right_ascension": " 9h50m18.1s",
+        "declination": "+72°16'43.9",
+        "magnitude": "10.81"
+    },
+    {
+        "name": "NGC 3077 (The Garland Galaxy)",
+        "right_ascension": "10h03m15.6s",
+        "declination": "+68°44'04.5",
+        "magnitude": "10.34"
+    },
+    {
+        "name": "NGC 3079 (The Phantom Frisbee Galaxy)",
+        "right_ascension": "10h01m55.6s",
+        "declination": "+55°40'50.9",
+        "magnitude": "11.11"
+    },
+    {
+        "name": "NGC 3147",
+        "right_ascension": "10h16m49.2s",
+        "declination": "+73°24'05.1",
+        "magnitude": "10.80"
+    },
+    {
+        "name": "NGC 3189 (NGC 3190 Group)",
+        "right_ascension": "10h18m04.3s",
+        "declination": "+21°50'02.0",
+        "magnitude": "11.86"
+    },
+    {
+        "name": "NGC 3193 (Leo Quartet)",
+        "right_ascension": "10h18m23.5s",
+        "declination": "+21°53'45.4",
+        "magnitude": "11.58"
+    },
+    {
+        "name": "NGC 3198",
+        "right_ascension": "10h19m53.2s",
+        "declination": "+45°33'04.6",
+        "magnitude": "10.61"
+    },
+    {
+        "name": "NGC 3294",
+        "right_ascension": "10h36m14.7s",
+        "declination": "+37°19'35.7",
+        "magnitude": "12.00"
+    },
+    {
+        "name": "NGC 3319",
+        "right_ascension": "10h39m07.9s",
+        "declination": "+41°41'19.8",
+        "magnitude": "11.35"
+    },
+    {
+        "name": "NGC 3344 (Sliced Onion Galaxy)",
+        "right_ascension": "10h43m29.8s",
+        "declination": "+24°55'27.8",
+        "magnitude": "10.31"
+    },
+    {
+        "name": "NGC 3359",
+        "right_ascension": "10h46m34.1s",
+        "declination": "+63°13'31.2",
+        "magnitude": "10.77"
+    },
+    {
+        "name": "NGC 3377",
+        "right_ascension": "10h47m41.1s",
+        "declination": "+13°59'16.1",
+        "magnitude": "11.15"
+    },
+    {
+        "name": "NGC 3412",
+        "right_ascension": "10h50m52.0s",
+        "declination": "+13°24'51.6",
+        "magnitude": "11.31"
+    },
+    {
+        "name": "NGC 3432 (Knitting Needle Galaxy)",
+        "right_ascension": "10h52m29.6s",
+        "declination": "+36°37'15.6",
+        "magnitude": "11.97"
+    },
+    {
+        "name": "NGC 3486",
+        "right_ascension": "11h00m22.5s",
+        "declination": "+28°58'37.8",
+        "magnitude": "10.87"
+    },
+    {
+        "name": "NGC 3489",
+        "right_ascension": "11h00m17.3s",
+        "declination": "+13°54'12.6",
+        "magnitude": "10.93"
+    },
+    {
+        "name": "NGC 3507",
+        "right_ascension": "11h03m24.1s",
+        "declination": "+18°08'15.5",
+        "magnitude": "10.91"
+    },
+    {
+        "name": "NGC 3521 (Bubble Galaxy)",
+        "right_ascension": "11h05m47.4s",
+        "declination": "-0°02'02.0",
+        "magnitude": "11.37"
+    },
+    {
+        "name": "IC 3568 (Lemon slice Nebula)",
+        "right_ascension": "12h32m59.0s",
+        "declination": "+82°34'01.0",
+        "magnitude": "10.77"
+    },
+    {
+        "name": "NGC 3628 (Hamburger Galaxy)",
+        "right_ascension": "11h20m15.8s",
+        "declination": "+13°35'30.6",
+        "magnitude": "9.99"
+    },
+    {
+        "name": "NGC 3640",
+        "right_ascension": "11h21m05.6s",
+        "declination": "+3°14'12.7",
+        "magnitude": "11.43"
+    },
+    {
+        "name": "NGC 3646",
+        "right_ascension": "11h21m41.8s",
+        "declination": "+20°10'19.2",
+        "magnitude": "11.52"
+    },
+    {
+        "name": "NGC 3665",
+        "right_ascension": "11h24m42.1s",
+        "declination": "+38°45'55.6",
+        "magnitude": "11.86"
+    },
+    {
+        "name": "NGC 3675",
+        "right_ascension": "11h26m06.9s",
+        "declination": "+43°35'18.9",
+        "magnitude": "11.28"
+    },
+    {
+        "name": "NGC 3705",
+        "right_ascension": "11h30m06.3s",
+        "declination": "+9°16'44.1",
+        "magnitude": "11.64"
+    },
+    {
+        "name": "NGC 3718",
+        "right_ascension": "11h32m33.0s",
+        "declination": "+53°04'14.0",
+        "magnitude": "10.81"
+    },
+    {
+        "name": "NGC 3756",
+        "right_ascension": "11h36m46.0s",
+        "declination": "+54°17'47.3",
+        "magnitude": "11.96"
+    },
+    {
+        "name": "NGC 3810",
+        "right_ascension": "11h40m57.6s",
+        "declination": "+11°28'24.7",
+        "magnitude": "11.70"
+    },
+    {
+        "name": "NGC 3893",
+        "right_ascension": "11h48m36.5s",
+        "declination": "+48°42'49.6",
+        "magnitude": "10.87"
+    },
+    {
+        "name": "NGC 3938",
+        "right_ascension": "11h52m47.9s",
+        "declination": "+44°07'25.6",
+        "magnitude": "10.58"
+    },
+    {
+        "name": "NGC 3941",
+        "right_ascension": "11h52m53.9s",
+        "declination": "+36°59'21.8",
+        "magnitude": "11.84"
+    },
+    {
+        "name": "NGC 3949",
+        "right_ascension": "11h53m40.1s",
+        "declination": "+47°51'42.7",
+        "magnitude": "11.49"
+    },
+    {
+        "name": "NGC 3982",
+        "right_ascension": "11h56m26.2s",
+        "declination": "+55°07'42.5",
+        "magnitude": "11.88"
+    },
+    {
+        "name": "NGC 4036",
+        "right_ascension": "12h01m24.5s",
+        "declination": "+61°53'55.8",
+        "magnitude": "11.37"
+    },
+    {
+        "name": "NGC 4041",
+        "right_ascension": "12h02m09.8s",
+        "declination": "+62°08'25.6",
+        "magnitude": "11.84"
+    },
+    {
+        "name": "NGC 4062",
+        "right_ascension": "12h04m02.5s",
+        "declination": "+31°53'55.9",
+        "magnitude": "11.44"
+    },
+    {
+        "name": "NGC 4102",
+        "right_ascension": "12h06m21.3s",
+        "declination": "+52°42'51.2",
+        "magnitude": "11.89"
+    },
+    {
+        "name": "NGC 4111",
+        "right_ascension": "12h07m01.6s",
+        "declination": "+43°04'07.1",
+        "magnitude": "10.94"
+    },
+    {
+        "name": "NGC 4125",
+        "right_ascension": "12h08m03.4s",
+        "declination": "+65°10'38.5",
+        "magnitude": "9.89"
+    },
+    {
+        "name": "NGC 4138",
+        "right_ascension": "12h09m28.3s",
+        "declination": "+43°41'19.0",
+        "magnitude": "11.51"
+    },
+    {
+        "name": "NGC 4150",
+        "right_ascension": "12h10m32.4s",
+        "declination": "+30°24'16.5",
+        "magnitude": "11.87"
+    },
+    {
+        "name": "NGC 4151 (Eye of Sauron)",
+        "right_ascension": "12h10m31.2s",
+        "declination": "+39°24'32.6",
+        "magnitude": "11.68"
+    },
+    {
+        "name": "NGC 4157",
+        "right_ascension": "12h11m02.7s",
+        "declination": "+50°29'16.9",
+        "magnitude": "11.53"
+    },
+    {
+        "name": "NGC 4168",
+        "right_ascension": "12h12m16.1s",
+        "declination": "+13°12'28.6",
+        "magnitude": "11.51"
+    },
+    {
+        "name": "NGC 4216 (Silver Streak Galaxy)",
+        "right_ascension": "12h15m53.3s",
+        "declination": "+13°09'07.2",
+        "magnitude": "10.33"
+    },
+    {
+        "name": "NGC 4236",
+        "right_ascension": "12h16m39.1s",
+        "declination": "+69°27'57.2",
+        "magnitude": "10.67"
+    },
+    {
+        "name": "NGC 4242",
+        "right_ascension": "12h17m28.6s",
+        "declination": "+45°37'21.8",
+        "magnitude": "11.02"
+    },
+    {
+        "name": "NGC 4244 (Silver Needle Galaxy)",
+        "right_ascension": "12h17m28.3s",
+        "declination": "+37°48'37.5",
+        "magnitude": "10.20"
+    },
+    {
+        "name": "NGC 4262",
+        "right_ascension": "12h19m29.5s",
+        "declination": "+14°52'49.4",
+        "magnitude": "11.85"
+    },
+    {
+        "name": "NGC 4274",
+        "right_ascension": "12h19m49.4s",
+        "declination": "+29°37'04.3",
+        "magnitude": "10.63"
+    },
+    {
+        "name": "NGC 4278",
+        "right_ascension": "12h20m05.6s",
+        "declination": "+29°17'02.1",
+        "magnitude": "10.38"
+    },
+    {
+        "name": "NGC 4298",
+        "right_ascension": "12h21m31.7s",
+        "declination": "+14°36'31.4",
+        "magnitude": "11.64"
+    },
+    {
+        "name": "NGC 4302",
+        "right_ascension": "12h21m41.4s",
+        "declination": "+14°36'01.6",
+        "magnitude": "11.91"
+    },
+    {
+        "name": "NGC 4314",
+        "right_ascension": "12h22m30.8s",
+        "declination": "+29°53'54.6",
+        "magnitude": "10.80"
+    },
+    {
+        "name": "NGC 4340",
+        "right_ascension": "12h23m34.2s",
+        "declination": "+16°43'29.9",
+        "magnitude": "11.98"
+    },
+    {
+        "name": "NGC 4346",
+        "right_ascension": "12h23m26.4s",
+        "declination": "+46°59'50.6",
+        "magnitude": "11.92"
+    },
+    {
+        "name": "NGC 4350",
+        "right_ascension": "12h23m56.7s",
+        "declination": "+16°41'46.1",
+        "magnitude": "11.36"
+    },
+    {
+        "name": "NGC 4369",
+        "right_ascension": "12h24m34.9s",
+        "declination": "+39°23'11.1",
+        "magnitude": "11.79"
+    },
+    {
+        "name": "NGC 4371",
+        "right_ascension": "12h24m54.4s",
+        "declination": "+11°42'24.7",
+        "magnitude": "11.13"
+    },
+    {
+        "name": "NGC 4388",
+        "right_ascension": "12h25m45.8s",
+        "declination": "+12°39'52.9",
+        "magnitude": "11.33"
+    },
+    {
+        "name": "NGC 4395",
+        "right_ascension": "12h25m47.7s",
+        "declination": "+33°33'00.2",
+        "magnitude": "10.39"
+    },
+    {
+        "name": "NGC 4414",
+        "right_ascension": "12h26m25.9s",
+        "declination": "+31°13'36.5",
+        "magnitude": "10.33"
+    },
+    {
+        "name": "NGC 4416",
+        "right_ascension": "12h26m45.7s",
+        "declination": "+7°55'16.5",
+        "magnitude": "11.92"
+    },
+    {
+        "name": "NGC 4419",
+        "right_ascension": "12h26m55.4s",
+        "declination": "+15°03'00.5",
+        "magnitude": "11.45"
+    },
+    {
+        "name": "NGC 4421",
+        "right_ascension": "12h27m01.5s",
+        "declination": "+15°27'50.6",
+        "magnitude": "11.88"
+    },
+    {
+        "name": "NGC 4429",
+        "right_ascension": "12h27m25.5s",
+        "declination": "+11°06'36.3",
+        "magnitude": "11.36"
+    },
+    {
+        "name": "NGC 4435 (The Eyes)",
+        "right_ascension": "12h27m39.4s",
+        "declination": "+13°04'54.0",
+        "magnitude": "11.10"
+    },
+    {
+        "name": "NGC 4438 (The Eyes)",
+        "right_ascension": "12h27m44.6s",
+        "declination": "+13°00'40.4",
+        "magnitude": "10.47"
+    },
+    {
+        "name": "NGC 4442",
+        "right_ascension": "12h28m02.8s",
+        "declination": "+9°48'22.0",
+        "magnitude": "11.36"
+    },
+    {
+        "name": "NGC 4449 (The Box Galaxy)",
+        "right_ascension": "12h28m09.7s",
+        "declination": "+44°05'49.6",
+        "magnitude": "9.58"
+    },
+    {
+        "name": "NGC 4450",
+        "right_ascension": "12h28m28.6s",
+        "declination": "+17°05'15.9",
+        "magnitude": "10.35"
+    },
+    {
+        "name": "NGC 4459",
+        "right_ascension": "12h28m59.0s",
+        "declination": "+13°58'52.6",
+        "magnitude": "11.32"
+    },
+    {
+        "name": "NGC 4461 (Markarian's Chain)",
+        "right_ascension": "12h29m02.0s",
+        "declination": "+13°11'11.4",
+        "magnitude": "11.49"
+    },
+    {
+        "name": "NGC 4473 (Markarian's Chain)",
+        "right_ascension": "12h29m47.8s",
+        "declination": "+13°25'55.1",
+        "magnitude": "10.49"
+    },
+    {
+        "name": "NGC 4477 (Markarian's Chain)",
+        "right_ascension": "12h30m01.1s",
+        "declination": "+13°38'20.8",
+        "magnitude": "10.71"
+    },
+    {
+        "name": "NGC 4478",
+        "right_ascension": "12h30m16.4s",
+        "declination": "+12°19'52.3",
+        "magnitude": "11.75"
+    },
+    {
+        "name": "NGC 4490 (Cocoon Galaxy)",
+        "right_ascension": "12h30m35.0s",
+        "declination": "+41°38'49.8",
+        "magnitude": "9.98"
+    },
+    {
+        "name": "NGC 4494",
+        "right_ascension": "12h31m22.9s",
+        "declination": "+25°46'41.3",
+        "magnitude": "9.97"
+    },
+    {
+        "name": "NGC 4503",
+        "right_ascension": "12h32m05.2s",
+        "declination": "+11°10'44.4",
+        "magnitude": "11.38"
+    },
+    {
+        "name": "NGC 4526 (Lost Galaxy)",
+        "right_ascension": "12h34m02.0s",
+        "declination": "+7°42'05.6",
+        "magnitude": "10.50"
+    },
+    {
+        "name": "NGC 4527",
+        "right_ascension": "12h34m07.5s",
+        "declination": "+2°39'21.5",
+        "magnitude": "11.84"
+    },
+    {
+        "name": "NGC 4535 (The Lost Galaxy of Copeland)",
+        "right_ascension": "12h34m19.3s",
+        "declination": "+8°12'00.7",
+        "magnitude": "10.07"
+    },
+    {
+        "name": "NGC 4536",
+        "right_ascension": "12h34m26.1s",
+        "declination": "+2°11'24.1",
+        "magnitude": "10.96"
+    },
+    {
+        "name": "NGC 4546",
+        "right_ascension": "12h35m28.5s",
+        "declination": "-3°47'29.1",
+        "magnitude": "10.85"
+    },
+    {
+        "name": "NGC 4550",
+        "right_ascension": "12h35m29.6s",
+        "declination": "+12°13'24.9",
+        "magnitude": "11.97"
+    },
+    {
+        "name": "NGC 4559 (Koi Fish Galaxy)",
+        "right_ascension": "12h35m56.5s",
+        "declination": "+27°57'46.9",
+        "magnitude": "10.23"
+    },
+    {
+        "name": "NGC 4564",
+        "right_ascension": "12h36m26.0s",
+        "declination": "+11°26'30.9",
+        "magnitude": "11.42"
+    },
+    {
+        "name": "NGC 4567 (Siamese Twins)",
+        "right_ascension": "12h36m31.7s",
+        "declination": "+11°15'37.7",
+        "magnitude": "11.61"
+    },
+    {
+        "name": "NGC 4568 (Siamese Twins)",
+        "right_ascension": "12h36m33.3s",
+        "declination": "+11°14'28.4",
+        "magnitude": "11.49"
+    },
+    {
+        "name": "NGC 4570",
+        "right_ascension": "12h36m52.4s",
+        "declination": "+7°14'56.6",
+        "magnitude": "11.24"
+    },
+    {
+        "name": "NGC 4571",
+        "right_ascension": "12h36m55.3s",
+        "declination": "+14°13'12.3",
+        "magnitude": "11.43"
+    },
+    {
+        "name": "IC 4592 (Blue Horsehead Nebula)",
+        "right_ascension": "16h12m48.0s",
+        "declination": "-19°17'59.4",
+        "magnitude": "4.37"
+    },
+    {
+        "name": "IC 4593 (White-eyed Pea Nebula)",
+        "right_ascension": "16h11m44.6s",
+        "declination": "+12°04'28.1",
+        "magnitude": "10.86"
+    },
+    {
+        "name": "NGC 4596",
+        "right_ascension": "12h39m54.9s",
+        "declination": "+10°10'42.9",
+        "magnitude": "11.63"
+    },
+    {
+        "name": "IC 4603",
+        "right_ascension": "16h26m00.1s",
+        "declination": "-24°24'01.2",
+        "magnitude": "8.31"
+    },
+    {
+        "name": "IC 4604 (\u03c1 Oph Nebula)",
+        "right_ascension": "16h26m00.1s",
+        "declination": "-23°24'00.8",
+        "magnitude": "5.01"
+    },
+    {
+        "name": "IC 4605",
+        "right_ascension": "16h31m12.1s",
+        "declination": "-25°06'01.4",
+        "magnitude": "5.21"
+    },
+    {
+        "name": "NGC 4608",
+        "right_ascension": "12h41m12.3s",
+        "declination": "+10°09'30.1",
+        "magnitude": "11.26"
+    },
+    {
+        "name": "NGC 4612",
+        "right_ascension": "12h41m31.8s",
+        "declination": "+7°19'01.9",
+        "magnitude": "11.52"
+    },
+    {
+        "name": "NGC 4618",
+        "right_ascension": "12h41m31.5s",
+        "declination": "+41°09'15.9",
+        "magnitude": "10.96"
+    },
+    {
+        "name": "IC 4628 (Prawn Nebula)",
+        "right_ascension": "16h56m55.0s",
+        "declination": "-40°30'51.0",
+        "magnitude": "9.48"
+    },
+    {
+        "name": "NGC 4631 (Whale Galaxy)",
+        "right_ascension": "12h42m06.8s",
+        "declination": "+32°32'41.9",
+        "magnitude": "9.39"
+    },
+    {
+        "name": "IC 4634",
+        "right_ascension": "17h01m33.9s",
+        "declination": "-21°49'33.4",
+        "magnitude": "11.27"
+    },
+    {
+        "name": "NGC 4638",
+        "right_ascension": "12h42m46.4s",
+        "declination": "+11°26'42.3",
+        "magnitude": "11.52"
+    },
+    {
+        "name": "NGC 4651 (Umbrella Galaxy)",
+        "right_ascension": "12h43m41.6s",
+        "declination": "+16°23'46.5",
+        "magnitude": "11.18"
+    },
+    {
+        "name": "NGC 4656 (Crowbar Galaxy)",
+        "right_ascension": "12h43m56.5s",
+        "declination": "+32°10'25.5",
+        "magnitude": "10.72"
+    },
+    {
+        "name": "NGC 4660",
+        "right_ascension": "12h44m31.0s",
+        "declination": "+11°11'35.3",
+        "magnitude": "11.50"
+    },
+    {
+        "name": "NGC 4664",
+        "right_ascension": "12h45m05.0s",
+        "declination": "+3°03'28.3",
+        "magnitude": "10.86"
+    },
+    {
+        "name": "IC 4665 (Summer Beehive Cluster)",
+        "right_ascension": "17h46m18.5s",
+        "declination": "+5°43'10.1",
+        "magnitude": "4.38"
+    },
+    {
+        "name": "IC 4684",
+        "right_ascension": "18h09m12.7s",
+        "declination": "-23°29'59.9",
+        "magnitude": "9.74"
+    },
+    {
+        "name": "NGC 4689",
+        "right_ascension": "12h47m44.5s",
+        "declination": "+13°45'55.6",
+        "magnitude": "11.14"
+    },
+    {
+        "name": "NGC 4691",
+        "right_ascension": "12h48m12.6s",
+        "declination": "-3°19'51.1",
+        "magnitude": "11.54"
+    },
+    {
+        "name": "NGC 4753 (Dust Devil Galaxy)",
+        "right_ascension": "12h52m21.2s",
+        "declination": "-1°11'51.9",
+        "magnitude": "10.35"
+    },
+    {
+        "name": "NGC 4754",
+        "right_ascension": "12h52m16.6s",
+        "declination": "+11°18'58.7",
+        "magnitude": "10.83"
+    },
+    {
+        "name": "IC 4756 (Graff's Cluster)",
+        "right_ascension": "18h38m32.0s",
+        "declination": "+5°29'32.7",
+        "magnitude": "4.79"
+    },
+    {
+        "name": "NGC 4762 (Paper-Kite Galaxy)",
+        "right_ascension": "12h52m55.1s",
+        "declination": "+11°14'00.4",
+        "magnitude": "10.54"
+    },
+    {
+        "name": "NGC 4772",
+        "right_ascension": "12h53m28.2s",
+        "declination": "+2°10'13.8",
+        "magnitude": "11.39"
+    },
+    {
+        "name": "NGC 4874",
+        "right_ascension": "12h59m34.7s",
+        "declination": "+27°57'46.2",
+        "magnitude": "11.60"
+    },
+    {
+        "name": "NGC 4889 (Coma B)",
+        "right_ascension": "13h00m07.0s",
+        "declination": "+27°58'49.7",
+        "magnitude": "11.50"
+    },
+    {
+        "name": "IC 4996 (P Cyg Cluster)",
+        "right_ascension": "20h16m31.4s",
+        "declination": "+37°38'10.0",
+        "magnitude": "7.46"
+    },
+    {
+        "name": "IC 4997",
+        "right_ascension": "20h20m09.9s",
+        "declination": "+16°44'03.1",
+        "magnitude": "11.36"
+    },
+    {
+        "name": "NGC 5068",
+        "right_ascension": "13h18m53.9s",
+        "declination": "-21°02'19.0",
+        "magnitude": "11.00"
+    },
+    {
+        "name": "IC 5076",
+        "right_ascension": "20h56m01.8s",
+        "declination": "+47°24'09.2",
+        "magnitude": "5.86"
+    },
+    {
+        "name": "IC 5117",
+        "right_ascension": "21h32m32.7s",
+        "declination": "+44°35'54.8",
+        "magnitude": "11.69"
+    },
+    {
+        "name": "IC 5146 (Cocoon Nebula)",
+        "right_ascension": "21h53m25.9s",
+        "declination": "+47°16'07.0",
+        "magnitude": "7.40"
+    },
+    {
+        "name": "NGC 5170",
+        "right_ascension": "13h29m48.0s",
+        "declination": "-17°57'57.0",
+        "magnitude": "11.50"
+    },
+    {
+        "name": "NGC 5195 (M51B)",
+        "right_ascension": "13h29m58.4s",
+        "declination": "+47°16'13.7",
+        "magnitude": "9.71"
+    },
+    {
+        "name": "IC 5217",
+        "right_ascension": "22h23m57.7s",
+        "declination": "+50°58'04.1",
+        "magnitude": "11.51"
+    },
+    {
+        "name": "NGC 5248",
+        "right_ascension": "13h37m31.3s",
+        "declination": "+8°53'15.7",
+        "magnitude": "11.21"
+    },
+    {
+        "name": "NGC 5322",
+        "right_ascension": "13h49m13.8s",
+        "declination": "+60°11'42.9",
+        "magnitude": "11.14"
+    },
+    {
+        "name": "NGC 5353 (NGC 5353 group)",
+        "right_ascension": "13h53m25.8s",
+        "declination": "+40°17'15.0",
+        "magnitude": "11.56"
+    },
+    {
+        "name": "NGC 5363",
+        "right_ascension": "13h56m06.6s",
+        "declination": "+5°15'25.6",
+        "magnitude": "10.75"
+    },
+    {
+        "name": "NGC 5377",
+        "right_ascension": "13h56m15.7s",
+        "declination": "+47°14'24.6",
+        "magnitude": "11.61"
+    },
+    {
+        "name": "NGC 5474",
+        "right_ascension": "14h05m00.5s",
+        "declination": "+53°40'01.3",
+        "magnitude": "10.94"
+    },
+    {
+        "name": "NGC 5557",
+        "right_ascension": "14h18m25.0s",
+        "declination": "+36°29'53.1",
+        "magnitude": "11.75"
+    },
+    {
+        "name": "NGC 5566",
+        "right_ascension": "14h20m19.4s",
+        "declination": "+3°56'09.3",
+        "magnitude": "10.77"
+    },
+    {
+        "name": "NGC 5576",
+        "right_ascension": "14h21m03.1s",
+        "declination": "+3°16'24.0",
+        "magnitude": "11.19"
+    },
+    {
+        "name": "NGC 5585",
+        "right_ascension": "14h19m47.2s",
+        "declination": "+56°44'02.6",
+        "magnitude": "11.36"
+    },
+    {
+        "name": "NGC 5638",
+        "right_ascension": "14h29m39.9s",
+        "declination": "+3°14'08.6",
+        "magnitude": "11.42"
+    },
+    {
+        "name": "NGC 5678",
+        "right_ascension": "14h32m04.6s",
+        "declination": "+57°55'35.7",
+        "magnitude": "11.96"
+    },
+    {
+        "name": "NGC 5701",
+        "right_ascension": "14h39m10.6s",
+        "declination": "+5°21'57.8",
+        "magnitude": "11.09"
+    },
+    {
+        "name": "NGC 5713",
+        "right_ascension": "14h40m11.1s",
+        "declination": "-0°17'14.0",
+        "magnitude": "11.43"
+    },
+    {
+        "name": "NGC 5775",
+        "right_ascension": "14h53m57.2s",
+        "declination": "+3°32'48.5",
+        "magnitude": "11.55"
+    },
+    {
+        "name": "NGC 5806",
+        "right_ascension": "15h00m00.1s",
+        "declination": "+1°53'36.4",
+        "magnitude": "11.91"
+    },
+    {
+        "name": "NGC 5813",
+        "right_ascension": "15h01m10.9s",
+        "declination": "+1°42'14.9",
+        "magnitude": "10.67"
+    },
+    {
+        "name": "NGC 5838",
+        "right_ascension": "15h05m25.9s",
+        "declination": "+2°06'05.6",
+        "magnitude": "11.72"
+    },
+    {
+        "name": "NGC 5845",
+        "right_ascension": "15h06m00.4s",
+        "declination": "+1°38'09.5",
+        "magnitude": "11.41"
+    },
+    {
+        "name": "NGC 5846",
+        "right_ascension": "15h06m28.9s",
+        "declination": "+1°36'28.1",
+        "magnitude": "11.49"
+    },
+    {
+        "name": "NGC 5903",
+        "right_ascension": "15h18m36.2s",
+        "declination": "-24°04'07.9",
+        "magnitude": "11.97"
+    },
+    {
+        "name": "NGC 5906 (Splinter Galaxy)",
+        "right_ascension": "15h15m53.2s",
+        "declination": "+56°20'03.2",
+        "magnitude": "11.94"
+    },
+    {
+        "name": "NGC 5962",
+        "right_ascension": "15h36m31.5s",
+        "declination": "+16°36'40.7",
+        "magnitude": "11.50"
+    },
+    {
+        "name": "NGC 6015",
+        "right_ascension": "15h51m25.0s",
+        "declination": "+62°18'56.2",
+        "magnitude": "11.28"
+    },
+    {
+        "name": "NGC 6124",
+        "right_ascension": "16h25m20.0s",
+        "declination": "-40°39'17.6",
+        "magnitude": "8.41"
+    },
+    {
+        "name": "NGC 6166",
+        "right_ascension": "16h28m38.4s",
+        "declination": "+39°33'22.6",
+        "magnitude": "11.91"
+    },
+    {
+        "name": "NGC 6199",
+        "right_ascension": "16h39m29.2s",
+        "declination": "+36°03'49.1",
+        "magnitude": "\u2014"
+    },
+    {
+        "name": "NGC 6207",
+        "right_ascension": "16h43m04.0s",
+        "declination": "+36°50'13.8",
+        "magnitude": "11.78"
+    },
+    {
+        "name": "NGC 6210 (Turtle Nebula)",
+        "right_ascension": "16h44m29.7s",
+        "declination": "+23°48'13.9",
+        "magnitude": "9.79"
+    },
+    {
+        "name": "NGC 6231 (False Comet Nebula)",
+        "right_ascension": "16h54m08.8s",
+        "declination": "-41°49'43.0",
+        "magnitude": "6.00"
+    },
+    {
+        "name": "NGC 6242",
+        "right_ascension": "16h55m36.3s",
+        "declination": "-39°28'18.2",
+        "magnitude": "8.28"
+    },
+    {
+        "name": "NGC 6268",
+        "right_ascension": "17h02m08.1s",
+        "declination": "-39°43'00.2",
+        "magnitude": "11.49"
+    },
+    {
+        "name": "NGC 6281 (Moth Wing Cluster)",
+        "right_ascension": "17h04m41.4s",
+        "declination": "-37°59'11.6",
+        "magnitude": "6.83"
+    },
+    {
+        "name": "NGC 6302 (Bug Nebula)",
+        "right_ascension": "17h13m44.7s",
+        "declination": "-37°06'21.1",
+        "magnitude": "10.86"
+    },
+    {
+        "name": "NGC 6309 (Box Nebula)",
+        "right_ascension": "17h14m04.7s",
+        "declination": "-12°54'32.7",
+        "magnitude": "11.76"
+    },
+    {
+        "name": "NGC 6340",
+        "right_ascension": "17h10m26.1s",
+        "declination": "+72°18'35.3",
+        "magnitude": "11.15"
+    },
+    {
+        "name": "NGC 6369 (Little Ghost Nebula)",
+        "right_ascension": "17h29m20.9s",
+        "declination": "-23°45'35.3",
+        "magnitude": "11.81"
+    },
+    {
+        "name": "NGC 6374",
+        "right_ascension": "17h32m15.4s",
+        "declination": "-32°35'52.6",
+        "magnitude": "6.26"
+    },
+    {
+        "name": "NGC 6383",
+        "right_ascension": "17h34m42.8s",
+        "declination": "-32°34'57.4",
+        "magnitude": "6.27"
+    },
+    {
+        "name": "NGC 6396",
+        "right_ascension": "17h37m36.6s",
+        "declination": "-35°01'41.3",
+        "magnitude": "9.51"
+    },
+    {
+        "name": "NGC 6400 (Phantom Cluster)",
+        "right_ascension": "17h40m12.6s",
+        "declination": "-36°56'46.7",
+        "magnitude": "10.13"
+    },
+    {
+        "name": "NGC 6404",
+        "right_ascension": "17h39m40.2s",
+        "declination": "-33°14'02.3",
+        "magnitude": "11.43"
+    },
+    {
+        "name": "NGC 6416",
+        "right_ascension": "17h44m19.6s",
+        "declination": "-32°21'46.3",
+        "magnitude": "6.47"
+    },
+    {
+        "name": "NGC 6425",
+        "right_ascension": "17h46m59.4s",
+        "declination": "-31°31'50.8",
+        "magnitude": "7.92"
+    },
+    {
+        "name": "NGC 6445 (Little Gem Nebula)",
+        "right_ascension": "17h49m15.8s",
+        "declination": "-20°00'33.5",
+        "magnitude": "11.55"
+    },
+    {
+        "name": "NGC 6451 (Tom Thumb Cluster)",
+        "right_ascension": "17h50m41.7s",
+        "declination": "-30°12'38.3",
+        "magnitude": "8.85"
+    },
+    {
+        "name": "NGC 6469",
+        "right_ascension": "17h53m12.6s",
+        "declination": "-22°19'11.7",
+        "magnitude": "8.60"
+    },
+    {
+        "name": "NGC 6482",
+        "right_ascension": "17h51m49.4s",
+        "declination": "+23°04'32.4",
+        "magnitude": "11.60"
+    },
+    {
+        "name": "NGC 6507",
+        "right_ascension": "17h59m49.1s",
+        "declination": "-17°25'02.9",
+        "magnitude": "9.93"
+    },
+    {
+        "name": "NGC 6520 (Dead Man's Chest Cluster)",
+        "right_ascension": "18h03m24.7s",
+        "declination": "-27°53'18.2",
+        "magnitude": "8.17"
+    },
+    {
+        "name": "NGC 6530 (Herschel 36)",
+        "right_ascension": "18h04m31.6s",
+        "declination": "-24°21'29.0",
+        "magnitude": "5.05"
+    },
+    {
+        "name": "NGC 6537 (Red spider Nebula)",
+        "right_ascension": "18h05m13.8s",
+        "declination": "-19°50'33.7",
+        "magnitude": "11.96"
+    },
+    {
+        "name": "NGC 6543 (Cat's Eye Nebula)",
+        "right_ascension": "17h58m34.9s",
+        "declination": "+66°38'17.8",
+        "magnitude": "8.24"
+    },
+    {
+        "name": "NGC 6546",
+        "right_ascension": "18h07m22.8s",
+        "declination": "-23°17'49.0",
+        "magnitude": "8.43"
+    },
+    {
+        "name": "NGC 6567",
+        "right_ascension": "18h13m45.9s",
+        "declination": "-19°04'32.6",
+        "magnitude": "11.36"
+    },
+    {
+        "name": "NGC 6568",
+        "right_ascension": "18h12m43.9s",
+        "declination": "-21°35'59.2",
+        "magnitude": "9.00"
+    },
+    {
+        "name": "NGC 6572 (Blue Racquetball Nebula)",
+        "right_ascension": "18h12m07.0s",
+        "declination": "+6°51'22.2",
+        "magnitude": "8.28"
+    },
+    {
+        "name": "NGC 6583",
+        "right_ascension": "18h15m49.7s",
+        "declination": "-22°07'58.1",
+        "magnitude": "10.42"
+    },
+    {
+        "name": "NGC 6589",
+        "right_ascension": "18h16m51.1s",
+        "declination": "-19°53'22.6",
+        "magnitude": "9.78"
+    },
+    {
+        "name": "NGC 6590",
+        "right_ascension": "18h17m00.7s",
+        "declination": "-19°52'53.8",
+        "magnitude": "9.78"
+    },
+    {
+        "name": "NGC 6595",
+        "right_ascension": "18h17m00.7s",
+        "declination": "-19°52'46.6",
+        "magnitude": "7.38"
+    },
+    {
+        "name": "NGC 6603",
+        "right_ascension": "18h18m26.7s",
+        "declination": "-18°24'22.3",
+        "magnitude": "11.45"
+    },
+    {
+        "name": "NGC 6604",
+        "right_ascension": "18h18m03.6s",
+        "declination": "-12°14'27.5",
+        "magnitude": "6.78"
+    },
+    {
+        "name": "NGC 6605",
+        "right_ascension": "18h17m00.3s",
+        "declination": "-15°00'37.1",
+        "magnitude": "6.31"
+    },
+    {
+        "name": "NGC 6625",
+        "right_ascension": "18h22m48.0s",
+        "declination": "-11°57'14.2",
+        "magnitude": "9.28"
+    },
+    {
+        "name": "NGC 6629",
+        "right_ascension": "18h25m43.2s",
+        "declination": "-23°12'09.7",
+        "magnitude": "11.76"
+    },
+    {
+        "name": "NGC 6631",
+        "right_ascension": "18h27m15.8s",
+        "declination": "-12°01'08.1",
+        "magnitude": "11.99"
+    },
+    {
+        "name": "NGC 6633 (Tweedledum Cluster)",
+        "right_ascension": "18h27m31.9s",
+        "declination": "+6°34'21.0",
+        "magnitude": "4.79"
+    },
+    {
+        "name": "NGC 6644",
+        "right_ascension": "18h32m35.5s",
+        "declination": "-25°07'44.1",
+        "magnitude": "11.23"
+    },
+    {
+        "name": "NGC 6645",
+        "right_ascension": "18h32m32.0s",
+        "declination": "-16°54'33.5",
+        "magnitude": "8.85"
+    },
+    {
+        "name": "NGC 6647",
+        "right_ascension": "18h31m29.1s",
+        "declination": "-17°20'21.7",
+        "magnitude": "8.35"
+    },
+    {
+        "name": "NGC 6649",
+        "right_ascension": "18h33m27.6s",
+        "declination": "-10°24'06.4",
+        "magnitude": "9.18"
+    },
+    {
+        "name": "NGC 6664 (Santa's Sleigh Cluster)",
+        "right_ascension": "18h36m31.4s",
+        "declination": "-8°11'10.0",
+        "magnitude": "8.06"
+    },
+    {
+        "name": "NGC 6683",
+        "right_ascension": "18h42m13.7s",
+        "declination": "-6°11'54.4",
+        "magnitude": "9.65"
+    },
+    {
+        "name": "NGC 6703",
+        "right_ascension": "18h47m20.0s",
+        "declination": "+45°33'17.8",
+        "magnitude": "11.48"
+    },
+    {
+        "name": "NGC 6704",
+        "right_ascension": "18h50m45.7s",
+        "declination": "-5°12'30.1",
+        "magnitude": "9.45"
+    },
+    {
+        "name": "NGC 6709 (Flying Unicorn Cluster)",
+        "right_ascension": "18h51m18.8s",
+        "declination": "+10°19'14.5",
+        "magnitude": "6.88"
+    },
+    {
+        "name": "NGC 6716",
+        "right_ascension": "18h54m35.0s",
+        "declination": "-19°54'05.2",
+        "magnitude": "7.93"
+    },
+    {
+        "name": "NGC 6738",
+        "right_ascension": "19h01m17.7s",
+        "declination": "+11°37'21.9",
+        "magnitude": "8.48"
+    },
+    {
+        "name": "NGC 6741 (Phantom Streak Nebula)",
+        "right_ascension": "19h02m38.0s",
+        "declination": "-0°26'49.5",
+        "magnitude": "11.73"
+    },
+    {
+        "name": "NGC 6755 (Possible Binary Cluster)",
+        "right_ascension": "19h07m49.9s",
+        "declination": "+4°16'09.4",
+        "magnitude": "7.71"
+    },
+    {
+        "name": "NGC 6756 (Possible Binary Cluster)",
+        "right_ascension": "19h08m45.8s",
+        "declination": "+4°43'09.5",
+        "magnitude": "10.81"
+    },
+    {
+        "name": "NGC 6781 (Snowglobe Nebula)",
+        "right_ascension": "19h18m29.0s",
+        "declination": "+6°32'28.0",
+        "magnitude": "11.61"
+    },
+    {
+        "name": "NGC 6790",
+        "right_ascension": "19h22m57.9s",
+        "declination": "+1°30'54.0",
+        "magnitude": "10.73"
+    },
+    {
+        "name": "NGC 6791",
+        "right_ascension": "19h20m54.2s",
+        "declination": "+37°46'32.7",
+        "magnitude": "9.65"
+    },
+    {
+        "name": "NGC 6802",
+        "right_ascension": "19h30m37.0s",
+        "declination": "+20°15'44.8",
+        "magnitude": "8.97"
+    },
+    {
+        "name": "NGC 6803",
+        "right_ascension": "19h31m17.5s",
+        "declination": "+10°03'30.9",
+        "magnitude": "11.60"
+    },
+    {
+        "name": "NGC 6811 (Hole in a Cluster)",
+        "right_ascension": "19h37m18.5s",
+        "declination": "+46°23'30.2",
+        "magnitude": "6.95"
+    },
+    {
+        "name": "NGC 6818 (Little Gem Nebula)",
+        "right_ascension": "19h43m59.1s",
+        "declination": "-14°09'09.1",
+        "magnitude": "9.73"
+    },
+    {
+        "name": "NGC 6819 (The Foxhead Cluster)",
+        "right_ascension": "19h41m19.3s",
+        "declination": "+40°11'26.1",
+        "magnitude": "7.45"
+    },
+    {
+        "name": "NGC 6822 (Barnard's Galaxy)",
+        "right_ascension": "19h44m57.3s",
+        "declination": "-14°47'47.1",
+        "magnitude": "8.54"
+    },
+    {
+        "name": "NGC 6823",
+        "right_ascension": "19h43m10.2s",
+        "declination": "+23°18'11.1",
+        "magnitude": "7.27"
+    },
+    {
+        "name": "NGC 6826 (Blinking Planetary Nebula)",
+        "right_ascension": "19h44m49.8s",
+        "declination": "+50°31'43.5",
+        "magnitude": "8.95"
+    },
+    {
+        "name": "NGC 6830 (Poodle Cluster)",
+        "right_ascension": "19h51m00.2s",
+        "declination": "+23°06'10.9",
+        "magnitude": "8.08"
+    },
+    {
+        "name": "NGC 6834",
+        "right_ascension": "19h52m13.2s",
+        "declination": "+29°24'40.3",
+        "magnitude": "7.97"
+    },
+    {
+        "name": "NGC 6866 (Kite Cluster)",
+        "right_ascension": "20h03m56.5s",
+        "declination": "+44°09'40.8",
+        "magnitude": "7.75"
+    },
+    {
+        "name": "NGC 6871",
+        "right_ascension": "20h06m00.4s",
+        "declination": "+35°46'48.7",
+        "magnitude": "5.36"
+    },
+    {
+        "name": "NGC 6883",
+        "right_ascension": "20h11m20.3s",
+        "declination": "+35°50'06.5",
+        "magnitude": "8.16"
+    },
+    {
+        "name": "NGC 6884",
+        "right_ascension": "20h10m25.3s",
+        "declination": "+46°27'51.6",
+        "magnitude": "11.05"
+    },
+    {
+        "name": "NGC 6885 (20 Vulpeculae Cluster)",
+        "right_ascension": "20h12m02.2s",
+        "declination": "+26°28'51.4",
+        "magnitude": "8.28"
+    },
+    {
+        "name": "NGC 6886",
+        "right_ascension": "20h12m44.0s",
+        "declination": "+19°59'32.6",
+        "magnitude": "11.60"
+    },
+    {
+        "name": "NGC 6888 (Crescent Nebula)",
+        "right_ascension": "20h12m08.4s",
+        "declination": "+38°21'29.4",
+        "magnitude": "7.56"
+    },
+    {
+        "name": "NGC 6891",
+        "right_ascension": "20h15m10.0s",
+        "declination": "+12°42'24.7",
+        "magnitude": "10.72"
+    },
+    {
+        "name": "NGC 6905 (Blue Flash Nebula)",
+        "right_ascension": "20h22m24.2s",
+        "declination": "+20°06'26.0",
+        "magnitude": "11.30"
+    },
+    {
+        "name": "NGC 6910 (The Inchworm Cluster)",
+        "right_ascension": "20h23m09.4s",
+        "declination": "+40°46'41.0",
+        "magnitude": "7.56"
+    },
+    {
+        "name": "NGC 6939 (Ghost Bush Cluster)",
+        "right_ascension": "20h31m32.3s",
+        "declination": "+60°39'53.5",
+        "magnitude": "7.96"
+    },
+    {
+        "name": "NGC 6940 (Mothra Cluster)",
+        "right_ascension": "20h34m27.2s",
+        "declination": "+28°17'08.8",
+        "magnitude": "6.49"
+    },
+    {
+        "name": "NGC 6946 (Fireworks Galaxy)",
+        "right_ascension": "20h34m54.7s",
+        "declination": "+60°09'23.4",
+        "magnitude": "9.76"
+    },
+    {
+        "name": "NGC 6951",
+        "right_ascension": "20h37m16.9s",
+        "declination": "+66°06'30.0",
+        "magnitude": "10.81"
+    },
+    {
+        "name": "NGC 6960 (Filamentary Nebula)",
+        "right_ascension": "20h45m39.4s",
+        "declination": "+30°42'39.5",
+        "magnitude": "7.19"
+    },
+    {
+        "name": "NGC 6963",
+        "right_ascension": "20h47m20.5s",
+        "declination": "+0°30'40.9",
+        "magnitude": "\u2014"
+    },
+    {
+        "name": "NGC 6992 (East Veil Nebula)",
+        "right_ascension": "20h56m20.4s",
+        "declination": "+31°44'44.1",
+        "magnitude": "7.19"
+    },
+    {
+        "name": "NGC 6996 (Bird's Nest)",
+        "right_ascension": "20h56m26.7s",
+        "declination": "+45°28'21.3",
+        "magnitude": "10.17"
+    },
+    {
+        "name": "NGC 6997",
+        "right_ascension": "20h56m32.9s",
+        "declination": "+44°36'45.3",
+        "magnitude": "10.17"
+    },
+    {
+        "name": "NGC 7000 (North America Nebula)",
+        "right_ascension": "20h58m48.7s",
+        "declination": "+44°19'57.2",
+        "magnitude": "4.17"
+    },
+    {
+        "name": "NGC 7008 (Fetus Nebula)",
+        "right_ascension": "21h00m34.6s",
+        "declination": "+54°32'44.9",
+        "magnitude": "10.87"
+    },
+    {
+        "name": "NGC 7009 (Saturn Nebula)",
+        "right_ascension": "21h04m12.1s",
+        "declination": "-11°21'42.2",
+        "magnitude": "8.78"
+    },
+    {
+        "name": "NGC 7023 (Iris Nebula)",
+        "right_ascension": "21h01m40.1s",
+        "declination": "+68°09'55.6",
+        "magnitude": "6.96"
+    },
+    {
+        "name": "NGC 7026 (Cheeseburger Nebula)",
+        "right_ascension": "21h06m20.1s",
+        "declination": "+47°51'15.8",
+        "magnitude": "11.07"
+    },
+    {
+        "name": "NGC 7027 (Jewel Bug Nebula)",
+        "right_ascension": "21h07m03.2s",
+        "declination": "+42°14'18.9",
+        "magnitude": "8.68"
+    },
+    {
+        "name": "NGC 7031",
+        "right_ascension": "21h07m07.9s",
+        "declination": "+50°52'38.5",
+        "magnitude": "9.27"
+    },
+    {
+        "name": "NGC 7039",
+        "right_ascension": "21h10m49.8s",
+        "declination": "+45°37'09.6",
+        "magnitude": "7.78"
+    },
+    {
+        "name": "NGC 7062",
+        "right_ascension": "21h23m28.7s",
+        "declination": "+46°23'31.7",
+        "magnitude": "8.48"
+    },
+    {
+        "name": "NGC 7063",
+        "right_ascension": "21h24m25.5s",
+        "declination": "+36°28'56.0",
+        "magnitude": "7.20"
+    },
+    {
+        "name": "NGC 7067",
+        "right_ascension": "21h24m14.6s",
+        "declination": "+48°01'19.6",
+        "magnitude": "9.88"
+    },
+    {
+        "name": "NGC 7082",
+        "right_ascension": "21h29m18.9s",
+        "declination": "+47°07'44.5",
+        "magnitude": "7.38"
+    },
+    {
+        "name": "NGC 7086",
+        "right_ascension": "21h30m28.9s",
+        "declination": "+51°36'07.0",
+        "magnitude": "8.58"
+    },
+    {
+        "name": "NGC 7128",
+        "right_ascension": "21h43m59.0s",
+        "declination": "+53°43'00.0",
+        "magnitude": "9.88"
+    },
+    {
+        "name": "NGC 7129 (Small Cluster Nebula)",
+        "right_ascension": "21h42m59.0s",
+        "declination": "+66°06'15.6",
+        "magnitude": "11.67"
+    },
+    {
+        "name": "NGC 7142",
+        "right_ascension": "21h45m13.1s",
+        "declination": "+65°46'22.8",
+        "magnitude": "9.47"
+    },
+    {
+        "name": "NGC 7160 (Swimming Alligator Cluster)",
+        "right_ascension": "21h53m42.8s",
+        "declination": "+62°36'15.2",
+        "magnitude": "6.28"
+    },
+    {
+        "name": "NGC 7177",
+        "right_ascension": "22h00m42.6s",
+        "declination": "+17°44'24.3",
+        "magnitude": "11.72"
+    },
+    {
+        "name": "NGC 7209 (Star Lizard Cluster)",
+        "right_ascension": "22h05m08.8s",
+        "declination": "+46°29'04.0",
+        "magnitude": "7.90"
+    },
+    {
+        "name": "NGC 7226",
+        "right_ascension": "22h10m26.9s",
+        "declination": "+55°23'56.8",
+        "magnitude": "9.79"
+    },
+    {
+        "name": "NGC 7235",
+        "right_ascension": "22h12m27.3s",
+        "declination": "+57°16'15.6",
+        "magnitude": "7.89"
+    },
+    {
+        "name": "NGC 7243",
+        "right_ascension": "22h15m09.9s",
+        "declination": "+49°53'57.0",
+        "magnitude": "6.60"
+    },
+    {
+        "name": "NGC 7245",
+        "right_ascension": "22h15m17.2s",
+        "declination": "+54°20'01.9",
+        "magnitude": "9.40"
+    },
+    {
+        "name": "NGC 7261",
+        "right_ascension": "22h20m09.4s",
+        "declination": "+58°07'44.2",
+        "magnitude": "8.59"
+    },
+    {
+        "name": "NGC 7296",
+        "right_ascension": "22h28m03.1s",
+        "declination": "+52°19'25.2",
+        "magnitude": "9.91"
+    },
+    {
+        "name": "NGC 7331 (Deer Lick Group)",
+        "right_ascension": "22h37m05.6s",
+        "declination": "+34°25'02.0",
+        "magnitude": "9.76"
+    },
+    {
+        "name": "NGC 7380 (The Wizard Nebula)",
+        "right_ascension": "22h47m23.2s",
+        "declination": "+58°07'56.3",
+        "magnitude": "7.40"
+    },
+    {
+        "name": "NGC 7479 (Propeller Galaxy)",
+        "right_ascension": "23h04m57.9s",
+        "declination": "+12°19'28.5",
+        "magnitude": "11.82"
+    },
+    {
+        "name": "NGC 7510 (The Dormouse Cluster)",
+        "right_ascension": "23h11m02.5s",
+        "declination": "+60°34'11.1",
+        "magnitude": "8.11"
+    },
+    {
+        "name": "NGC 7635 (Bubble Nebula)",
+        "right_ascension": "23h20m50.8s",
+        "declination": "+61°12'04.5",
+        "magnitude": "10.21"
+    },
+    {
+        "name": "NGC 7662 (Blue Snowball)",
+        "right_ascension": "23h25m55.2s",
+        "declination": "+42°32'07.1",
+        "magnitude": "8.60"
+    },
+    {
+        "name": "NGC 7686",
+        "right_ascension": "23h29m43.1s",
+        "declination": "+49°10'11.8",
+        "magnitude": "5.86"
+    },
+    {
+        "name": "NGC 7741",
+        "right_ascension": "23h43m55.7s",
+        "declination": "+26°04'35.2",
+        "magnitude": "11.96"
+    },
+    {
+        "name": "NGC 7762",
+        "right_ascension": "23h49m54.6s",
+        "declination": "+68°01'25.2",
+        "magnitude": "10.21"
+    },
+    {
+        "name": "NGC 7788",
+        "right_ascension": "23h56m40.3s",
+        "declination": "+61°23'58.1",
+        "magnitude": "9.63"
+    },
+    {
+        "name": "NGC 7789 (Caroline's Rose Cluster)",
+        "right_ascension": "23h57m26.0s",
+        "declination": "+56°42'25.5",
+        "magnitude": "6.95"
+    },
+    {
+        "name": "NGC 7790 (The Widow's Web Cluster)",
+        "right_ascension": "23h58m26.3s",
+        "declination": "+61°12'24.6",
+        "magnitude": "8.73"
+    }
+]
+}
